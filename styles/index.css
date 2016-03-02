@@ -1,0 +1,11 @@
+.nav-item{
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
+#navigation{
+    margin-left: -50px;
+}
+#empty-item{
+    width:500px;
+}
