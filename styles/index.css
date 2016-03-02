@@ -6,8 +6,10 @@
 }
 .zajawka{
     text-align: center;
-    background-color: darkgray;
     height:300px;
+    -webkit-filter: opacity(0.1);
+    filter: opacity(0.1);
+    background-image: url("../images/main-background.jpg");
 }
 .glowna-zajawka{
     padding: 50px;
@@ -15,4 +17,12 @@
 .lista-pozioma{
     display: inline-block;
     margin-right: 30px;
+}
+.funkcjonalnosc{
+    display:inline-block;
+    padding:30px;
+    text-align: center;
+}
+.pozostale-funkcjonalnosci{
+
 }
