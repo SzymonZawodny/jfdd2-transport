@@ -1,11 +1,18 @@
-.nav-item{
-    display: inline-block;
-    margin-right: 30px;
-    vertical-align: top;
-}
-#navigation{
+.navigation{
     margin-left: -50px;
 }
-#empty-item{
+.empty-item{
     width:500px;
+}
+.zajawka{
+    text-align: center;
+    background-color: darkgray;
+    height:300px;
+}
+.glowna-zajawka{
+    padding: 50px;
+}
+.lista-pozioma{
+    display: inline-block;
+    margin-right: 30px;
 }
