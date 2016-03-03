@@ -4,25 +4,26 @@
 .empty-item{
     width:500px;
 }
-.zajawka{
+/*FBT-1*/
+.slogan{
     text-align: center;
     height:300px;
-    -webkit-filter: opacity(0.1);
     filter: opacity(0.1);
     background-image: url("../images/main-background.jpg");
 }
-.glowna-zajawka{
+.main-slogan{
     padding: 50px;
 }
-.lista-pozioma{
+/*FBT-1 END*/
+.horizontal-list{
     display: inline-block;
     margin-right: 30px;
 }
-.funkcjonalnosc{
+.function{
     display:inline-block;
     padding:30px;
     text-align: center;
 }
-.pozostale-funkcjonalnosci{
+.other-functions{
 
 }
