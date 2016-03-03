@@ -1,6 +1,7 @@
 body{
     font-family: Arial, sans-serif;
     min-width:700px;
+    font-weight: bold;
 }
 a{
     text-decoration: none;
@@ -78,7 +79,24 @@ header{
 }
 /*FBT-9 nav END*/
 
-
+/*FBT-10 other-functions*/
+.other-functions{
+    margin-bottom:200px;
+    margin-top:30px;
+}
+.other-func-item{
+    text-align: center;
+    font-size:14px;
+    color:#00008B;
+    padding:10%;
+    padding-bottom:0;
+    transition: transform 300ms linear,opacity 300ms linear;
+}
+.other-func-item:hover{
+    opacity:0.8;
+    transform: scale(1.02)
+}
+/*FBT-10 other-functions END*/
 
 .horizontal-list{
     display: inline-block;
@@ -88,3 +106,12 @@ header{
     padding:30px;
     text-align: center;
 }
+.footer{
+    background-color: #00008B;
+    color:#ffffff;
+    min-height:70px;
+    position:relative; /*to adjust position of the logo relative to the header*/
+    display: block;
+
+}
+
