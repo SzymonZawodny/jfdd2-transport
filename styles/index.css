@@ -80,6 +80,10 @@ header{
 /*FBT-9 nav END*/
 
 /*FBT-10 other-functions*/
+.other-functions{
+    margin-bottom:200px;
+    margin-top:30px;
+}
 .other-func-item{
     text-align: center;
     font-size:14px;
