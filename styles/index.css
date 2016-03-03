@@ -1,29 +1,90 @@
-.navigation{
-    margin-left: -50px;
+body{
+    font-family: Arial, sans-serif;
+    min-width:700px;
 }
-.empty-item{
-    width:500px;
+a{
+    text-decoration: none;
 }
-/*FBT-1*/
+/*FBT-1 slogan*/
 .slogan{
+    height: 705px;
+    width: 100%;
+    background-image: url("../images/main-background-map-opacity.png");
+    background-repeat: no-repeat;
+    background-size:100%;
     text-align: center;
-    height:300px;
-    filter: opacity(0.1);
-    background-image: url("../images/main-background.jpg");
+
 }
 .main-slogan{
-    padding: 50px;
+    font-size: 36px;
+    font-style: bold;
+    letter-spacing: 0.03em;
+    color:#00008B;
+    padding-top:20%;
+    margin-bottom: 80px;
 }
-/*FBT-1 END*/
+
+.secondary-slogan{ /*button*/
+    font-size: 16px;
+    color:#FFFFFF;
+    background-color: #00008B;
+    text-align: center;
+    font-weight:bold;
+    letter-spacing: 0.1em;
+    min-width:200px;
+    display:inline-block;
+    padding:20px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 7px rgba(30,30,30,0.2);
+    text-shadow: 0 0 10px 7px rgba(30,30,30,0.2);
+    transition: background-color 300ms linear, transform 300ms linear;
+}
+.secondary-slogan:hover{
+    background-color: #3B23FF;
+    transform: scale(1.02)
+}
+/*FBT-1 slogan END*/
+/*FBT-9 nav*/
+header{
+    background-color: #00008B;
+    color:#ffffff;
+    min-height:70px;
+    position:relative; /*to adjust position of the logo relative to the header*/
+}
+.navigation{
+    font-style: bold;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+.logo{
+    float:left;
+    position:absolute; /*to adjust position of the logo*/
+    top:15px;
+}
+.nav-item{
+    float:right;
+    margin-top:5px;
+    padding: 20px;
+    border-bottom:solid 3px #00008B;
+    border-top: solid 3px #00008B;
+    transition: border-color 300ms linear;
+}
+.nav-item:hover{
+    border-bottom-color: #FFF;
+    border-top-color: #FFF;
+}
+.clear{
+    clear:both;
+}
+/*FBT-9 nav END*/
+
+
+
 .horizontal-list{
     display: inline-block;
-    margin-right: 30px;
 }
 .function{
     display:inline-block;
     padding:30px;
     text-align: center;
-}
-.other-functions{
-
 }
