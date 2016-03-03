@@ -88,3 +88,13 @@ header{
     padding:30px;
     text-align: center;
 }
+
+.footer{
+    background-color: #00008B;
+    color:#ffffff;
+    min-height:70px;
+    position:relative; /*to adjust position of the logo relative to the header*/
+    display: block;
+
+}
+
