@@ -109,9 +109,25 @@ header{
 .footer{
     background-color: #00008B;
     color:#ffffff;
-    min-height:70px;
-    position:relative; /*to adjust position of the logo relative to the header*/
-    display: block;
 
 }
 
+.footer-text{
+    text-align: right;
+
+}
+
+.fa-facebook-square{
+    padding-right: 15px;
+    display: block;
+
+}
+.fa-twitter-square{
+    padding-right: 15px;
+    display: block;
+}
+
+.fa-google-plus-square{
+
+
+}
