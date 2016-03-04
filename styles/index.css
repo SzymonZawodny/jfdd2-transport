@@ -104,9 +104,19 @@ a{
 /*FBT-2 main functions*/
 .main-functions .function{
     display:inline-block;
-    padding:30px;
+    padding:0px;
     text-align: center;
+    width: 20%;
 }
+
+.main-functions-images{
+    width: 100%;
+    padding: 0px;;
+}
+/*FBT-2 END*/
+
+
+
 /*FBT-2 main functions END*/
 
 .footer{
