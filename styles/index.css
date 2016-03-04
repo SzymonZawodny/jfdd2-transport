@@ -92,18 +92,35 @@ a{
 .other-functions{
     margin-bottom:200px;
     margin-top:30px;
+    text-align:center;
 }
 .other-functions .other-func-item{
     text-align: center;
     font-size:14px;
     color:#00008B;
-    padding:10%;
+    padding:8%;
     padding-bottom:0;
     transition: transform 300ms linear,opacity 300ms linear;
 }
 .other-functions .other-func-item:hover{
     opacity:0.8;
     transform: scale(1.02)
+}
+.other-functions .three-in-row{
+    display:none;
+}
+@media screen and (min-width:2350px){
+    .other-functions .three-in-row{
+        display:none;
+    }
+}
+@media screen and (min-width:900px){
+    .other-functions .two-in-row{
+        display:none;
+    }
+    .other-functions .three-in-row{
+        display:block;
+    }
 }
 /*FBT-10 other-functions END*/
 /*FBT-2 main functions*/
