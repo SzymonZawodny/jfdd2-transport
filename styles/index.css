@@ -7,6 +7,10 @@ a{
     text-decoration: none;
     color:#fff;
 }
+
+.horizontal-list{
+    display: inline-block;
+}
 /*FBT-1 slogan*/
 .slogan{
     height: 705px;
@@ -17,7 +21,7 @@ a{
     text-align: center;
 
 }
-.main-slogan{
+.slogan .main-slogan{
     font-size: 36px;
     letter-spacing: 0.03em;
     color:#00008B;
@@ -25,7 +29,7 @@ a{
     margin-bottom: 80px;
 }
 
-.secondary-slogan{ /*button*/
+.slogan .secondary-slogan{ /*button*/
     font-size: 16px;
     color:#FFFFFF;
     background-color: #00008B;
@@ -40,29 +44,29 @@ a{
     text-shadow: 0 0 10px 7px rgba(30,30,30,0.2);
     transition: background-color 300ms linear, transform 300ms linear;
 }
-.secondary-slogan:hover{
+.slogan .secondary-slogan:hover{
     background-color: #3B23FF;
     transform: scale(1.02)
 }
 /*FBT-1 slogan END*/
 /*FBT-9 nav*/
-header{
+.header{
     background-color: #00008B;
     color:#ffffff;
     min-height:70px;
     position:relative; /*to adjust position of the logo relative to the header*/
 }
-.navigation{
+.header .navigation{
     text-transform: uppercase;
     color:#ffffff;
 }
-.logo{
+.header .logo{
     float:left;
     position:absolute; /*to adjust position of the logo*/
     top:10px;
     left:10px;
 }
-.nav-item{
+.header .nav-item{
     float:right;
     margin-top:5px;
     padding: 20px;
@@ -70,11 +74,11 @@ header{
     border-top: solid 3px #00008B;
     transition: border-color 300ms linear;
 }
-.nav-item:hover{
+.header .nav-item:hover{
     border-bottom-color: #FFF;
     border-top-color: #FFF;
 }
-.clear{
+.header .clear{
     clear:both;
 }
 /*FBT-9 nav END*/
@@ -84,7 +88,7 @@ header{
     margin-bottom:200px;
     margin-top:30px;
 }
-.other-func-item{
+.other-functions .other-func-item{
     text-align: center;
     font-size:14px;
     color:#00008B;
@@ -92,20 +96,19 @@ header{
     padding-bottom:0;
     transition: transform 300ms linear,opacity 300ms linear;
 }
-.other-func-item:hover{
+.other-functions .other-func-item:hover{
     opacity:0.8;
     transform: scale(1.02)
 }
 /*FBT-10 other-functions END*/
-
-.horizontal-list{
-    display: inline-block;
-}
-.function{
+/*FBT-2 main functions*/
+.main-functions .function{
     display:inline-block;
     padding:30px;
     text-align: center;
 }
+/*FBT-2 main functions END*/
+
 .footer{
     background-color: #00008B;
     color:#ffffff;
@@ -116,7 +119,6 @@ header{
     padding-left: 15px;
     padding-right: 15px;
     display: block;
-
 }
 .fa-twitter-square{
     padding-right: 15px;
@@ -148,3 +150,4 @@ header{
     color: #3B23FF;
     transform: scale(1.02)
 }
+
