@@ -124,9 +124,21 @@ a{
     color:#00008B;
     /*text-align: right;*/
 }
+.contact-form select{
+    border-width: 2px;
+    transition: border-color 300ms linear, border-width 300ms linear;
+
+}
 .contact-form input{
+    border-width: 2px;
     border-radius:5px;
     margin-left:5px;
+    transition: border-color 300ms linear, border-width 300ms linear;
+}
+.contact-form .focusable:focus,
+.contact-form .focusable:hover{
+    border-color: #00008B;
+    border-width: 2px;
 }
 .contact-form #subject{
     border-radius:5px;
@@ -154,6 +166,8 @@ a{
     width:247px;
     border-radius: 5px;
     margin-left:5px;
+    border-width:2px;
+    transition: border-color 300ms linear, border-width 300ms linear;
 }
 #submit{
     position:relative;
@@ -161,6 +175,7 @@ a{
     left:325px;
     width:80px;
     height:30px;
+    transition: background-color 300ms linear;
 }
 /*FBT-04 contact form + FBT-06 form validation END*/
 
