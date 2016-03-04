@@ -1,15 +1,31 @@
 body{
     font-family: Arial, sans-serif;
-    min-width:700px;
     font-weight: bold;
 }
 a{
     text-decoration: none;
     color:#fff;
 }
+.clear{
+    clear:both;
+}
 
 .horizontal-list{
     display: inline-block;
+}
+.button{
+    font-size: 16px;
+    color:#FFFFFF;
+    background-color: #00008B;
+    text-align: center;
+    font-weight:bold;
+    letter-spacing: 0.1em;
+    border-radius: 3px;
+    text-shadow: 0 0 10px 7px rgba(30,30,30,0.2);
+    transition: background-color 300ms linear;
+}
+.button:hover{
+    background-color: #3B23FF;
 }
 /*FBT-1 slogan*/
 .slogan{
@@ -30,22 +46,14 @@ a{
 }
 
 .slogan .secondary-slogan{ /*button*/
-    font-size: 16px;
-    color:#FFFFFF;
-    background-color: #00008B;
-    text-align: center;
-    font-weight:bold;
-    letter-spacing: 0.1em;
     min-width:200px;
     display:inline-block;
     padding:20px;
     border-radius: 3px;
     box-shadow: 0 0 10px 7px rgba(30,30,30,0.2);
-    text-shadow: 0 0 10px 7px rgba(30,30,30,0.2);
-    transition: background-color 300ms linear, transform 300ms linear;
+    transition: transform 300ms linear;
 }
 .slogan .secondary-slogan:hover{
-    background-color: #3B23FF;
     transform: scale(1.02)
 }
 /*FBT-1 slogan END*/
@@ -78,9 +86,6 @@ a{
     border-bottom-color: #FFF;
     border-top-color: #FFF;
 }
-.header .clear{
-    clear:both;
-}
 /*FBT-9 nav END*/
 
 /*FBT-10 other-functions*/
@@ -109,10 +114,61 @@ a{
 }
 /*FBT-2 main functions END*/
 
+/*FBT-04 contact form + FBT-06 form validation*/
+.contact-form form{
+    float:right;
+    width:420px;
+    padding:30px;
+    margin-right:10%;
+    margin-bottom:10%;
+    color:#00008B;
+    /*text-align: right;*/
+}
+.contact-form input{
+    border-radius:5px;
+    margin-left:5px;
+}
+.contact-form #subject{
+    border-radius:5px;
+    margin-left:5px;
+    width:253px;
+}
+.contact-form .contact-form-label{
+    font-size: 24px;
+    text-align: center;
+    padding:30px;
+}
+.contact-form .form-item{
+    margin-top:10px;
+}
+.contact-form .form-label{
+    width:150px;
+    display:inline-block;
+    text-align: right;
+}
+.contact-form .message-text{
+    position:relative;
+    top:-140px;
+}
+.contact-form textarea{
+    width:247px;
+    border-radius: 5px;
+    margin-left:5px;
+}
+#submit{
+    position:relative;
+    top:10px;
+    left:325px;
+    width:80px;
+    height:30px;
+}
+/*FBT-04 contact form + FBT-06 form validation END*/
+
+
+
 .footer{
     background-color: #00008B;
     color:#ffffff;
-
 }
 
 .footer-text{
