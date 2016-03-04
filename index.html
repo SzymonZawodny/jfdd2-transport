@@ -27,7 +27,7 @@
     <!--FBT-1 slogan-->
     <header class="slogan" id="slogan">
         <h1 class="main-slogan">Z nami zawsze trafisz do celu!</h1>
-        <a class="secondary-slogan" href="#main-functions">Dowiedz się więcej</a>
+        <a class="secondary-slogan button" href="#main-functions">Dowiedz się więcej</a>
     </header>
     <!--FBT-1 slogan END-->
 
@@ -61,25 +61,64 @@
     <!--FBT-2 main functions + FBT-3 images for functions END-->
     <!--FBT-10 other functions-->
     <section class="other-functions">
-        <ul class="other-func-list">
-            <li class="horizontal-list other-func-item"><img src="images/localization.png" alt="Usługa lokalizacji"><br/>Usługa lokalizacji</li>
-            <li class="horizontal-list other-func-item"><img src="images/avoid.png" alt="Unikaj przesiadek"><br/>Unikaj przesiadek</li>
-            <li class="horizontal-list other-func-item"><img src="images/traffic.png" alt="Informacja drogowa"><br/>Informacja drogowa</li>
-        </ul>
-        <ul class="other-func-list">
-            <li class="horizontal-list other-func-item"><img src="images/bus.png" alt="Autobusy"><br/>Autobusy</li>
-            <li class="horizontal-list other-func-item"><img src="images/tram.png" alt="Tramwaje"><br/>Tramwaje</li>
-            <li class="horizontal-list other-func-item"><img src="images/train.png" alt="Koleje"><br/>Pociągi</li>
-        </ul>
+        <div class="other-func-list">
+            <p class="horizontal-list other-func-item"><img src="images/localization.png" alt="Usługa lokalizacji"><br/>Usługa lokalizacji</p>
+            <p class="horizontal-list other-func-item"><img src="images/avoid.png" alt="Unikaj przesiadek"><br/>Unikaj przesiadek</p>
+            <div class="two-in-row"></div>
+            <p class="horizontal-list other-func-item"><img src="images/traffic.png" alt="Informacja drogowa"><br/>Informacja drogowa</p>
+            <div class="three-in-row"></div>
+            <p class="horizontal-list other-func-item"><img src="images/bus.png" alt="Autobusy"><br/>Autobusy</p>
+            <div class="two-in-row"></div>
+            <p class="horizontal-list other-func-item"><img src="images/tram.png" alt="Tramwaje"><br/>Tramwaje</p>
+            <p class="horizontal-list other-func-item"><img src="images/train.png" alt="Koleje"><br/>Pociągi</p>
+        </div>
     </section>
     <!--FBT-10 other functions END-->
 
+    <!--FBT-12 description-->
+    <!--FBT-12 description END-->
+
+    <!--FBT-04 contact form + FBT-06 form validation-->
+    <section class="contact-form" id="contact-form">
+        <form>
+            <p class="contact-form-label">Napisz do nas:</p>
+            <fieldset class="form-item">
+                <label class="form-label" for="subject">Temat:</label>
+                <select class="focusable" id="subject">
+                    <option value="Zgłoś problem">Zgłoś problem</option>
+                    <option value="Współpraca">Współpraca</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-item">
+                <label class="form-label" for="name">Imię i nazwisko:</label>
+                <input class="focusable" id="name" type="text" name="name" size="30" required>
+            </fieldset>
+            <fieldset class="form-item">
+                <label class="form-label" for="telephone">Telefon:</label>
+                <input class="focusable" id="telephone" type="tel" placeholder="xxx-xxx-xxx" pattern="\d{3}[\-]\d{3}[\-]\d{3}" name="telephone" size="10">
+            </fieldset>
+            <fieldset class="form-item">
+                <label class="form-label" for="email">Adres email:</label>
+                <input class="focusable" id="email" type="email" name="email" size="30" required>
+            </fieldset>
+            <fieldset class="form-item">
+                <label class="form-label message-text" for="text">Tekst wiadomości:</label>
+                <textarea class="focusable" name="text" id="text" rows="10" required></textarea>
+            </fieldset>
+            <input id="submit" class="button" type="submit" value="Wyślij">
+        </form>
+    </section>
+    <div class="clear"></div>
+    <!--FBT-04 contact form + FBT-06 form validation END-->
     <footer>
         <section class="footer">
-           <div class="footer-text">Copyright 2016 by KoLiber Team</div>
+
+
             <a href="https://www.facebook.com/infoshareacademy/?fref=ts"> <i class="fa fa-facebook-square fa-2x"></i></a>
             <a href="https://twitter.com/search?q=%23InfoShareAcademy"> <i class="fa fa-twitter-square fa-2x"></i></a>
-                <a href="https://plus.google.com/+infoshare"><i class="fa fa-google-plus-square fa-2x"></i></a>
+            <a href="https://plus.google.com/+infoshare"><i class="fa fa-google-plus-square fa-2x"></i></a>
+            <i class="fa fa-copyright ">&nbsp2016 by KoLiber team</i>
+
         </section>
     </footer>
 </main>
