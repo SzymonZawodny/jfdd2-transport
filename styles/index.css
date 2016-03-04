@@ -112,12 +112,8 @@ header{
 
 }
 
-.footer-text{
-    text-align: right;
-
-}
-
 .fa-facebook-square{
+    padding-left: 15px;
     padding-right: 15px;
     display: block;
 
@@ -130,4 +126,25 @@ header{
 .fa-google-plus-square{
 
 
+}
+.fa-copyright{
+    float:right;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+
+.fa-facebook-square:hover{
+    color: #3B23FF;
+    transform: scale(1.02)
+
+}
+
+.fa-twitter-square:hover{
+    color: #3B23FF;
+    transform: scale(1.02)
+}
+
+.fa-google-plus-square:hover{
+    color: #3B23FF;
+    transform: scale(1.02)
 }
