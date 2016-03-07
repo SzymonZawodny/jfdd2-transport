@@ -124,19 +124,38 @@ a{
 }
 /*FBT-10 other-functions END*/
 /*FBT-2 main functions*/
+
+.main-functions{
+}
 .main-functions .function{
     display:inline-block;
-    padding:0px;
+    /*padding:0px;*/
     text-align: center;
-    width: 20%;
+    width: 25%;
+    float: left;
+    color: #FFFFFF;
+    font-size: larger;
+    transition: transform 500ms linear;
+    padding-top: 39px;
+    padding-bottom: 20px;
+    background-color: #00008B;
 }
-
-.main-functions-images{
+.main-functions-images {
     width: 100%;
-    padding: 0px;;
+    padding: 0px;
+    -webkit-filter: opacity(50%);
+    -webkit-transition: .2s ease-in-out;
 }
-/*FBT-2 END*/
 
+.main-functions-images:hover{
+    -webkit-filter: opacity(100%);
+    -webkit-transition: .2s ease-in-out;
+
+}
+.main-functions .function:hover{
+    /*transform: scale(1.008);*/
+
+}
 
 
 /*FBT-2 main functions END*/
