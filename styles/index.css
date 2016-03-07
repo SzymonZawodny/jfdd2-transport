@@ -161,14 +161,17 @@ a{
 /*FBT-2 main functions END*/
 
 /*FBT-04 contact form + FBT-06 form validation*/
+.contact-form{
+    background-color: #00008B;
+}
 .contact-form form{
     float:right;
-    width:420px;
-    padding:30px;
-    margin-right:10%;
-    margin-bottom:10%;
+    width:40%;
+    padding-right:10%;
     color:#00008B;
-    /*text-align: right;*/
+    text-align: right;
+    height:420px;
+    border-top: solid 3px #00008B;
 }
 .contact-form select{
     border-width: 2px;
@@ -193,7 +196,6 @@ a{
 }
 .contact-form .contact-form-label{
     font-size: 24px;
-    text-align: center;
     padding:30px;
 }
 .contact-form .form-item{
@@ -223,6 +225,29 @@ a{
     height:30px;
     transition: background-color 300ms linear;
 }
+.contact-form .contact{
+    background-color:#00008B;
+    color:#FFF;
+    width:40%;
+    padding-left:10%;
+    height:420px;
+    float:left;
+}
+.contact-form .contact h2{
+    font-size: 24px;
+    padding-top:33px;
+    padding-bottom:20px;
+
+}.contact-form .contact h3{
+    font-size: 30px;
+    padding-top:30px;
+    padding-bottom:40px;
+}
+.contact-form .contact p{
+    font-size: 16px;
+    padding-top:10px;
+}
+
 /*FBT-04 contact form + FBT-06 form validation END*/
 
 
