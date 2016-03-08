@@ -164,9 +164,18 @@ a{
     color: #FFFFFF;
     font-size: larger;
     transition: transform 500ms linear;
-    padding-top: 39px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    /*padding-bottom: 20px;*/
     background-color: #00008B;
+}
+.main-functions .function p{
+    height: 50px;
+
+}
+@media screen and (max-width: 1650px) {
+    .main-functions .function p {
+        font-size: 14px;
+    }
 }
 .main-functions-images {
     width: 100%;
