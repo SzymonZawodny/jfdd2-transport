@@ -92,7 +92,8 @@
             <p>tel. +48 999 999 999</p>
             <p>email: biuro@koliber.pl</p>
         </div>
-        <form>
+
+        <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
             <p class="contact-form-label">Napisz do nas:</p>
             <fieldset class="form-item">
                 <label class="form-label" for="subject">Temat:</label>
@@ -117,6 +118,7 @@
                 <label class="form-label message-text" for="text">Tekst wiadomości:</label>
                 <textarea class="focusable" name="text" id="text" rows="10" required></textarea>
             </fieldset>
+            <input type="hidden" name="receiver" value="m.rybczonek@gmail.com">
             <input id="submit" class="button" type="submit" value="Wyślij">
         </form>
     </section>
