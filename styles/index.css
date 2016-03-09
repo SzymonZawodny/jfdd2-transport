@@ -2,7 +2,7 @@ body{
     font-family: Arial, sans-serif;
     font-weight: bold;
     background-image: url("../images/main-background-map-opacity.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size:100%;
     background-attachment: fixed;
 }
@@ -36,14 +36,15 @@ a{
     width: 100%;
     text-align: center;
 }
-.slogan .main-slogan{
-    position:absolute;
-    left:38%;
-    font-size: 50px;
+.slogan .slogan-text .main-slogan{
+    font-size: 60px;
     letter-spacing: 0.03em;
+    padding:10px;
     color:#FFF;
-    padding-top:300px;
-    z-index:1;
+    margin-top:300px;
+    width:65%;
+    position:relative;
+    left:17%;
 }
 .slogan div{
     position:absolute;
@@ -58,24 +59,31 @@ a{
 .slogan img{
     height:705px;
 }
-.slogan .secondary-slogan{ /*button*/
-    position:absolute;
-    top:500px;
-    left:45%;
+.slogan .slogan-text .secondary-slogan{ /*button*/
     min-width:200px;
     display:inline-block;
     padding:20px;
+    margin-top:40px;
     border-radius: 3px;
+    border: solid 2px #FFF;
     box-shadow: 0 0 10px 7px rgba(30,30,30,0.2);
-    transition: transform 300ms linear,
-                background-color 300ms linear,
-                color 300ms linear;
-    z-index:1;
+    transition: all 500ms ease;
+
 }
 .slogan .secondary-slogan:hover{
-    transform: scale(1.02);
     background-color: aliceblue;
     color:#00008B;
+    border-color:#00008B;
+    transform: scale(1.1);
+}
+.slogan .slogan-text{
+    z-index:1;
+}
+@media screen and (max-width:715px){
+    .slogan .slogan-text .main-slogan{
+        font-size:40px;
+        margin-top:250px;
+    }
 }
 /*FBT-1 slogan END*/
 /*FBT-9 nav*/
@@ -137,6 +145,7 @@ a{
         display:none;
     }
 }
+/*splits other-functions icons*/
 @media screen and (min-width:900px){
     .other-functions .two-in-row{
         display:none;
@@ -199,13 +208,24 @@ a{
 }
 .contact-form form{
     float:right;
-    width:40%;
-    padding-right:10%;
+    width:48%;
+    padding-right:2%;
     color:#00008B;
     background-color: #FFF;
     text-align: right;
     height:420px;
     border-top: solid 3px #00008B;
+}
+.divide-label{
+    display:none;
+}
+@media screen and (max-width: 900px) {
+    .divide-label{
+        display:block;
+    }
+    textarea{
+        height: 50px;
+    }
 }
 .contact-form select{
     border-width: 2px;
@@ -239,16 +259,13 @@ a{
     display:inline-block;
     text-align: right;
 }
-.contact-form .message-text{
-    position:relative;
-    top:-140px;
-}
 .contact-form textarea{
     width:247px;
     border-radius: 5px;
     margin-left:5px;
     border-width:2px;
     transition: border-color 300ms linear, border-width 300ms linear;
+    vertical-align: top;
 }
 #submit{
     transition: background-color 300ms linear;
@@ -256,8 +273,8 @@ a{
 .contact-form .contact{
     background-color:#00008B;
     color:#FFF;
-    width:40%;
-    padding-left:10%;
+    width:48%;
+    padding-left:2%;
     height:420px;
     float:left;
 }
