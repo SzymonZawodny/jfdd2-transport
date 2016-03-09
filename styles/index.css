@@ -175,32 +175,33 @@ a{
     height: 50px;
 
 }
+.main-functions-images {
+width: 100%;
+padding: 0px;
+-webkit-filter: opacity(50%);
+-webkit-transition: .2s ease-in-out;
+}
+
+.main-functions-images:hover{
+-webkit-filter: opacity(100%);
+-webkit-transition: .2s ease-in-out;
+
+}
+.main-functions .function:hover{
+/*transform: scale(1.008);*/
+
+}
 @media screen and (max-width: 1650px) {
     .main-functions .function p {
         font-size: 14px;
     }
-}
-.main-functions-images {
-    width: 100%;
-    padding: 0px;
-    -webkit-filter: opacity(50%);
-    -webkit-transition: .2s ease-in-out;
-}
-
-.main-functions-images:hover{
-    -webkit-filter: opacity(100%);
-    -webkit-transition: .2s ease-in-out;
-
-}
-.main-functions .function:hover{
-    /*transform: scale(1.008);*/
-
 }
 @media screen and (max-width:1650px) {
     .main-functions .function p {
         font-size: 14px;
     }
 }
+
 /*FBT-2 main functions END*/
 /*FBT-04 contact form + FBT-06 form validation*/
 .contact-form{
