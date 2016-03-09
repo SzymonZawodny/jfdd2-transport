@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>KoLiber</title>
@@ -28,8 +29,20 @@
 <main>
     <!--FBT-1 slogan-->
     <header class="slogan" id="slogan">
-        <h1 class="main-slogan">Z nami zawsze trafisz do celu!</h1>
-        <a class="secondary-slogan button" href="#main-functions">Dowiedz się więcej</a>
+        <div class="slogan-text">
+            <h1 class="main-slogan">Z nami zawsze trafisz do celu!</h1>
+            <a class="secondary-slogan button" href="#main-functions">Dowiedz się więcej</a>
+        </div>
+        <div class="slide">
+            <img src="images/slide2.png">
+        </div>
+        <div class="slide">
+            <img src="images/slide1.png">
+        </div>
+        <div class="slide">
+            <img src="images/slide3.png">
+        </div>
+
     </header>
     <!--FBT-1 slogan END-->
 
@@ -95,8 +108,40 @@
     </section>
     <!--FBT-10 other functions END-->
 
-    <!--FBT-12 description-->
-    <!--FBT-12 description END-->
+
+    <section class="description" >
+
+        <div class="description-text cf" >
+            <img class="main-description-images" src="images/trasa.png">
+            <div class="description-title">
+                Najnowsze technologie, dane w trybie real time!
+            </div>
+            <i class="fa fa-clock-o fa-4x">
+                <a href="#description-text"> Zawsze trafisz na czas!</a>
+                <br>
+                <i class="description-text">Dzięki naszej aplikacji w prosty sposób zaplanujesz podróż tak, aby dojechać na czas! </i>
+            </i>
+            <br>
+            <i class="fa fa-calendar-o fa-4x">
+                <a href="#description-text">Zaplanuj swoją podróż</a>
+                <br>
+                <i class="description-text">Dokładnie zaplanuj godzinę odjazu i przjazdu do punktu docelowego.</i>
+
+                </i>
+            <br>
+            <i class="fa fa-cloud fa-4x">
+                <a href="#description-text">Zawsze aktualne dane</a>
+                <br>
+                <i class="description-text">Nasza aplikacja korzysta z cały czas aktualizujących się danych. Z nami unikniesz rozczarowań!</i>
+
+            </i>
+
+        </div>
+
+    </section>
+    <!--FBT-12-description END-->
+
+
 
     <!--FBT-04 contact form + FBT-06 form validation-->
     <section class="contact-form" id="contact-form">
@@ -114,6 +159,7 @@
             <p class="contact-form-label">Napisz do nas:</p>
             <fieldset class="form-item">
                 <label class="form-label" for="subject">Temat:</label>
+                <div class="divide-label"></div>
                 <select class="focusable" id="subject">
                     <option value="Zgłoś problem">Zgłoś problem</option>
                     <option value="Współpraca">Współpraca</option>
@@ -121,18 +167,22 @@
             </fieldset>
             <fieldset class="form-item">
                 <label class="form-label" for="name">Imię i nazwisko:</label>
+                <div class="divide-label"></div>
                 <input class="focusable" id="name" type="text" name="name" size="30" required>
             </fieldset>
             <fieldset class="form-item">
                 <label class="form-label" for="telephone">Telefon:</label>
+                <div class="divide-label"></div>
                 <input class="focusable" id="telephone" type="tel" placeholder="xxx-xxx-xxx" pattern="\d{3}[\-]\d{3}[\-]\d{3}" name="telephone" size="30">
             </fieldset>
             <fieldset class="form-item">
                 <label class="form-label" for="email">Adres email:</label>
+                <div class="divide-label"></div>
                 <input class="focusable" id="email" type="email" name="email" size="30" required>
             </fieldset>
             <fieldset class="form-item">
                 <label class="form-label message-text" for="text">Tekst wiadomości:</label>
+                <div class="divide-label"></div>
                 <textarea class="focusable" name="text" id="text" rows="10" required></textarea>
             </fieldset>
             <input type="hidden" name="receiver" value="m.rybczonek@gmail.com">
