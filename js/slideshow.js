@@ -1,5 +1,7 @@
 $(document).ready(function(){
     $('.slide:gt(0)').hide();
+
+    $('.main-slogan').slideUp( "slow");
 });
 
 setInterval(
