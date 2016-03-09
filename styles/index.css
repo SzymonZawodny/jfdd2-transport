@@ -13,7 +13,6 @@ a{
 .clear{
     clear:both;
 }
-
 .horizontal-list{
     display: inline-block;
 }
@@ -38,13 +37,31 @@ a{
     text-align: center;
 }
 .slogan .main-slogan{
-    font-size: 36px;
+    position:absolute;
+    left:38%;
+    font-size: 50px;
     letter-spacing: 0.03em;
-    color:#00008B;
-    padding-top:20%;
-    margin-bottom: 80px;
+    color:#FFF;
+    padding-top:300px;
+    z-index:1;
+}
+.slogan div{
+    position:absolute;
+    top:70px;
+    left:0;
+    bottom:0;
+    right:0;
+    height:705px;
+    width:100%;
+    z-index:0;
+}
+.slogan img{
+    height:705px;
 }
 .slogan .secondary-slogan{ /*button*/
+    position:absolute;
+    top:500px;
+    left:45%;
     min-width:200px;
     display:inline-block;
     padding:20px;
@@ -53,6 +70,7 @@ a{
     transition: transform 300ms linear,
                 background-color 300ms linear,
                 color 300ms linear;
+    z-index:1;
 }
 .slogan .secondary-slogan:hover{
     transform: scale(1.02);
