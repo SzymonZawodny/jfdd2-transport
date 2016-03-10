@@ -389,3 +389,13 @@ padding: 0px;
 .cf {
     *zoom: 1;
 }
+
+.scrollTop{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.scrollTop a {
+    color: black;
+}
