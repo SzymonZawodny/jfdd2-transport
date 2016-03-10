@@ -35,13 +35,15 @@ a{
     height: 775px;
     width: 100%;
     text-align: center;
+    overflow: hidden;
 }
 .slogan .slogan-text .main-slogan{
     font-size: 60px;
+    /*font-border*/
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     letter-spacing: 0.03em;
     padding:10px;
     color:#FFF;
-    margin-top:300px;
     width:65%;
     position:relative;
     left:17%;
@@ -78,6 +80,7 @@ a{
 }
 .slogan .slogan-text{
     z-index:1;
+    margin-top:400px;
 }
 @media screen and (max-width:715px){
     .slogan .slogan-text .main-slogan{
@@ -131,7 +134,6 @@ a{
     color:#00008B;
     margin: 8% 8% 0 8%;
     transition: all 0.6s ease;
-    transform-style: preserve-3d;
 }
 .other-functions .other-func-item:hover {
     opacity:0.8;
