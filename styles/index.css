@@ -32,19 +32,22 @@ a{
 }
 /*FBT-1 slogan*/
 .slogan{
-    height: 705px;
+    height: 775px;
     width: 100%;
     text-align: center;
+    overflow: hidden;
 }
 .slogan .slogan-text .main-slogan{
     font-size: 60px;
+    /*font-border*/
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     letter-spacing: 0.03em;
     padding:10px;
     color:#FFF;
-    margin-top:300px;
     width:65%;
     position:relative;
     left:17%;
+    opacity:0;
 }
 .slogan div{
     position:absolute;
@@ -78,11 +81,14 @@ a{
 }
 .slogan .slogan-text{
     z-index:1;
+    margin-top:300px;
 }
 @media screen and (max-width:715px){
-    .slogan .slogan-text .main-slogan{
-        font-size:40px;
-        margin-top:250px;
+    .slogan .slogan-text .main-slogan {
+        font-size: 40px;
+    }
+    .slogan .slogan-text{
+        margin-top:200px;
     }
 }
 /*FBT-1 slogan END*/
@@ -91,7 +97,10 @@ a{
     background-color: #00008B;
     color:#ffffff;
     min-height:70px;
-    position:relative; /*to adjust position of the logo relative to the header*/
+    /*position:relative; !*to adjust position of the logo relative to the header*!*/
+    position:fixed;
+    width:100%;
+    z-index:2;
 }
 .header .navigation{
     text-transform: uppercase;
@@ -128,7 +137,6 @@ a{
     color:#00008B;
     margin: 8% 8% 0 8%;
     transition: all 0.6s ease;
-    transform-style: preserve-3d;
 }
 .other-functions .other-func-item:hover {
     opacity:0.8;
@@ -215,7 +223,8 @@ padding: 0px;
     background-color: #FFF;
     text-align: right;
     height:420px;
-    border-top: solid 3px #00008B;
+    margin-top:2px;
+
 }
 .divide-label{
     display:none;
@@ -278,6 +287,7 @@ padding: 0px;
     padding-left:2%;
     height:420px;
     float:left;
+    border-top: solid 2px #fff;
 }
 .contact-form .contact h2{
     font-size: 24px;
@@ -344,8 +354,6 @@ padding: 0px;
     position: relative;
     padding-bottom: 20px;
     padding-top: 20px;
-
-
 }
 
 .description-title{
