@@ -47,6 +47,7 @@ a{
     width:65%;
     position:relative;
     left:17%;
+    opacity:0;
 }
 .slogan div{
     position:absolute;
@@ -80,12 +81,14 @@ a{
 }
 .slogan .slogan-text{
     z-index:1;
-    margin-top:400px;
+    margin-top:300px;
 }
 @media screen and (max-width:715px){
-    .slogan .slogan-text .main-slogan{
-        font-size:40px;
-        margin-top:250px;
+    .slogan .slogan-text .main-slogan {
+        font-size: 40px;
+    }
+    .slogan .slogan-text{
+        margin-top:200px;
     }
 }
 /*FBT-1 slogan END*/
@@ -220,7 +223,8 @@ padding: 0px;
     background-color: #FFF;
     text-align: right;
     height:420px;
-    border-top: solid 3px #00008B;
+    margin-top:2px;
+
 }
 .divide-label{
     display:none;
@@ -283,6 +287,7 @@ padding: 0px;
     padding-left:2%;
     height:420px;
     float:left;
+    border-top: solid 2px #fff;
 }
 .contact-form .contact h2{
     font-size: 24px;
@@ -349,8 +354,6 @@ padding: 0px;
     position: relative;
     padding-bottom: 20px;
     padding-top: 20px;
-
-
 }
 
 .description-title{
