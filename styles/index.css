@@ -55,7 +55,7 @@ a{
     left:0;
     bottom:0;
     right:0;
-    height:705px;
+    height:405px;
     width:100%;
     z-index:0;
 }
@@ -164,11 +164,8 @@ a{
 }
 /*FBT-10 other-functions END*/
 /*FBT-2 main functions*/
-.main-functions{
-}
 .main-functions .function{
     display:inline-block;
-    /*padding:0px;*/
     text-align: center;
     width: 25%;
     float: left;
@@ -176,7 +173,6 @@ a{
     font-size: larger;
     transition: transform 500ms linear;
     padding-top: 50px;
-    /*padding-bottom: 20px;*/
     background-color: #00008B;
 }
 .main-functions .function p{
@@ -195,10 +191,6 @@ padding: 0px;
 -webkit-transition: .2s ease-in-out;
 
 }
-.main-functions .function:hover{
-/*transform: scale(1.008);*/
-
-}
 @media screen and (max-width: 1650px) {
     .main-functions .function p {
         font-size: 14px;
@@ -209,7 +201,6 @@ padding: 0px;
         font-size: 14px;
     }
 }
-
 /*FBT-2 main functions END*/
 /*FBT-04 contact form + FBT-06 form validation*/
 .contact-form{
@@ -305,12 +296,10 @@ padding: 0px;
 }
 /*FBT-04 contact form + FBT-06 form validation END*/
 
-
 .footer{
     background-color: #00008B;
     color:#ffffff;
 }
-
 .fa-facebook-square{
     padding-left: 15px;
     padding-right: 15px;
@@ -320,33 +309,23 @@ padding: 0px;
     padding-right: 15px;
     display: block;
 }
-
-.fa-google-plus-square{
-
-
-}
 .fa-copyright{
     float:right;
     margin-top: 9px;
     margin-right: 5px;
 }
-
 .fa-facebook-square:hover{
     color: #3B23FF;
     transform: scale(1.02)
-
 }
-
 .fa-twitter-square:hover{
     color: #3B23FF;
     transform: scale(1.02)
 }
-
 .fa-google-plus-square:hover{
     color: #3B23FF;
     transform: scale(1.02)
 }
-
 .description{
     background-color: #00008B;
     color: #ffffff;
@@ -355,55 +334,42 @@ padding: 0px;
     padding-bottom: 20px;
     padding-top: 20px;
 }
-
 .description-title{
     margin-bottom: 20px;
     font-size: 35px;
 }
-
 .description-text{
-    /*margin-left: 20px;
-    -webkit-columns: 300px 2;
-    -moz-columns: 300px 2;
-    columns: 300px 2; */
     font-size: 10px;
 }
 .main-description-images{
     float: left;
     margin-right: 25px;
 }
-
 .fa-clock-o {
     margin-top: 25px;
 }
 .fa-calendar-o{
     margin-top: 60px;
-
 }
 .fa-cloud{
    margin-top: 60px;
 }
-
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-
 .cf:after {
     clear: both;
 }
-
 .cf {
     *zoom: 1;
 }
-
 .scrollTop{
     position: fixed;
     right: 0;
     bottom: 0;
 }
-
 .scrollTop a {
     color: black;
 }

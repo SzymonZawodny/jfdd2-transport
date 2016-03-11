@@ -8,7 +8,6 @@ $scrollButtons.eq(0).click(function(){
         scrollTop: $(scrollTargets[0]).offset().top-70
     },2000);
     return false;
-
 });
 $scrollButtons.eq(1).click(function(){
     $('body').animate({
@@ -22,12 +21,10 @@ $scrollButtons.eq(2).click(function(){
     },2000);
     slideMainSlogan();
     return false;
-
 });
 $('.secondary-slogan.button').click(function(){
     $('body').animate({
         scrollTop: $(scrollTargets[1]).offset().top-70
     },2000);
     return false;
-
 });
