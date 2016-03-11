@@ -344,6 +344,7 @@ padding: 0px;
 .main-description-images{
     float: left;
     margin-right: 25px;
+    width: 400px;
 }
 .fa-clock-o {
     margin-top: 25px;
