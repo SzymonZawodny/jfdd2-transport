@@ -2,7 +2,7 @@ body{
     font-family: Arial, sans-serif;
     font-weight: bold;
     background-image: url("../images/main-background-map-opacity.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size:100%;
     background-attachment: fixed;
 }
@@ -13,7 +13,6 @@ a{
 .clear{
     clear:both;
 }
-
 .horizontal-list{
     display: inline-block;
 }
@@ -33,31 +32,64 @@ a{
 }
 /*FBT-1 slogan*/
 .slogan{
-    height: 705px;
+    height: 775px;
     width: 100%;
     text-align: center;
+    overflow: hidden;
 }
-.slogan .main-slogan{
-    font-size: 36px;
+.slogan .slogan-text .main-slogan{
+    font-size: 60px;
+    /*font-border*/
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     letter-spacing: 0.03em;
-    color:#00008B;
-    padding-top:20%;
-    margin-bottom: 80px;
+    padding:10px;
+    color:#FFF;
+    width:65%;
+    position:relative;
+    left:17%;
+    opacity:0;
 }
-.slogan .secondary-slogan{ /*button*/
+.slogan div{
+    position:absolute;
+    top:70px;
+    left:0;
+    bottom:0;
+    right:0;
+    height:405px;
+    width:100%;
+    z-index:0;
+}
+.slogan img{
+    height:705px;
+}
+.slogan .slogan-text .secondary-slogan{ /*button*/
     min-width:200px;
     display:inline-block;
     padding:20px;
+    margin-top:40px;
     border-radius: 3px;
+    border: solid 2px #FFF;
     box-shadow: 0 0 10px 7px rgba(30,30,30,0.2);
-    transition: transform 300ms linear,
-                background-color 300ms linear,
-                color 300ms linear;
+    transition: all 500ms ease;
+
 }
 .slogan .secondary-slogan:hover{
-    transform: scale(1.02);
     background-color: aliceblue;
     color:#00008B;
+    border-color:#00008B;
+    transform: scale(1.1);
+}
+.slogan .slogan-text{
+    z-index:1;
+    margin-top:300px;
+}
+@media screen and (max-width:715px){
+    .slogan .slogan-text .main-slogan {
+        font-size: 40px;
+    }
+    .slogan .slogan-text{
+        margin-top:200px;
+    }
 }
 /*FBT-1 slogan END*/
 /*FBT-9 nav*/
@@ -65,7 +97,10 @@ a{
     background-color: #00008B;
     color:#ffffff;
     min-height:70px;
-    position:relative; /*to adjust position of the logo relative to the header*/
+    /*position:relative; !*to adjust position of the logo relative to the header*!*/
+    position:fixed;
+    width:100%;
+    z-index:2;
 }
 .header .navigation{
     text-transform: uppercase;
@@ -102,7 +137,6 @@ a{
     color:#00008B;
     margin: 8% 8% 0 8%;
     transition: all 0.6s ease;
-    transform-style: preserve-3d;
 }
 .other-functions .other-func-item:hover {
     opacity:0.8;
@@ -119,6 +153,7 @@ a{
         display:none;
     }
 }
+/*splits other-functions icons*/
 @media screen and (min-width:900px){
     .other-functions .two-in-row{
         display:none;
@@ -129,11 +164,8 @@ a{
 }
 /*FBT-10 other-functions END*/
 /*FBT-2 main functions*/
-.main-functions{
-}
 .main-functions .function{
     display:inline-block;
-    /*padding:0px;*/
     text-align: center;
     width: 25%;
     float: left;
@@ -141,33 +173,28 @@ a{
     font-size: larger;
     transition: transform 500ms linear;
     padding-top: 50px;
-    /*padding-bottom: 20px;*/
     background-color: #00008B;
 }
 .main-functions .function p{
     height: 50px;
 
 }
+.main-functions-images {
+width: 100%;
+padding: 0px;
+-webkit-filter: opacity(50%);
+-webkit-transition: .2s ease-in-out;
+}
+
+.main-functions-images:hover{
+-webkit-filter: opacity(100%);
+-webkit-transition: .2s ease-in-out;
+
+}
 @media screen and (max-width: 1650px) {
     .main-functions .function p {
         font-size: 14px;
     }
-}
-.main-functions-images {
-    width: 100%;
-    padding: 0px;
-    -webkit-filter: opacity(50%);
-    -webkit-transition: .2s ease-in-out;
-}
-
-.main-functions-images:hover{
-    -webkit-filter: opacity(100%);
-    -webkit-transition: .2s ease-in-out;
-
-}
-.main-functions .function:hover{
-    /*transform: scale(1.008);*/
-
 }
 @media screen and (max-width:1650px) {
     .main-functions .function p {
@@ -181,13 +208,25 @@ a{
 }
 .contact-form form{
     float:right;
-    width:40%;
-    padding-right:10%;
+    width:48%;
+    padding-right:2%;
     color:#00008B;
     background-color: #FFF;
     text-align: right;
     height:420px;
-    border-top: solid 3px #00008B;
+    margin-top:2px;
+
+}
+.divide-label{
+    display:none;
+}
+@media screen and (max-width: 900px) {
+    .divide-label{
+        display:block;
+    }
+    textarea{
+        height: 50px;
+    }
 }
 .contact-form select{
     border-width: 2px;
@@ -221,16 +260,13 @@ a{
     display:inline-block;
     text-align: right;
 }
-.contact-form .message-text{
-    position:relative;
-    top:-140px;
-}
 .contact-form textarea{
     width:247px;
     border-radius: 5px;
     margin-left:5px;
     border-width:2px;
     transition: border-color 300ms linear, border-width 300ms linear;
+    vertical-align: top;
 }
 #submit{
     transition: background-color 300ms linear;
@@ -238,10 +274,11 @@ a{
 .contact-form .contact{
     background-color:#00008B;
     color:#FFF;
-    width:40%;
-    padding-left:10%;
+    width:48%;
+    padding-left:2%;
     height:420px;
     float:left;
+    border-top: solid 2px #fff;
 }
 .contact-form .contact h2{
     font-size: 24px;
@@ -259,12 +296,10 @@ a{
 }
 /*FBT-04 contact form + FBT-06 form validation END*/
 
-
 .footer{
     background-color: #00008B;
     color:#ffffff;
 }
-
 .fa-facebook-square{
     padding-left: 15px;
     padding-right: 15px;
@@ -274,30 +309,68 @@ a{
     padding-right: 15px;
     display: block;
 }
-
-.fa-google-plus-square{
-
-
-}
 .fa-copyright{
     float:right;
     margin-top: 9px;
     margin-right: 5px;
 }
-
 .fa-facebook-square:hover{
     color: #3B23FF;
     transform: scale(1.02)
-
 }
-
 .fa-twitter-square:hover{
     color: #3B23FF;
     transform: scale(1.02)
 }
-
 .fa-google-plus-square:hover{
     color: #3B23FF;
     transform: scale(1.02)
 }
-
+.description{
+    background-color: #00008B;
+    color: #ffffff;
+    min-height: 70px;
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.description-title{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.description-text{
+    font-size: 10px;
+}
+.main-description-images{
+    float: left;
+    margin-right: 25px;
+    width: 400px;
+}
+.fa-clock-o {
+    margin-top: 25px;
+}
+.fa-calendar-o{
+    margin-top: 60px;
+}
+.fa-cloud{
+   margin-top: 60px;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+.scrollTop{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.scrollTop a {
+    color: black;
+}
