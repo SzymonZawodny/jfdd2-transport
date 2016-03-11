@@ -310,9 +310,9 @@ padding: 0px;
     display: block;
 }
 .fa-copyright{
-    float:right;
     margin-top: 9px;
-    margin-right: 5px;
+    margin-button: 9px;
+    float: right;
 }
 .fa-facebook-square:hover{
     color: #3B23FF;
@@ -373,4 +373,7 @@ padding: 0px;
 }
 .scrollTop a {
     color: black;
+}
+.fa-arrow-circle-up{
+    padding-bottom: 30px;
 }
