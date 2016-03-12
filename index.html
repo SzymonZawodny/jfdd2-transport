@@ -140,35 +140,23 @@
             <p>tel. +48 999 999 999</p>
             <p>email: biuro@koliber.pl</p>
         </div>
-        <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
-            <p class="contact-form-label">Napisz do nas:</p>
-            <fieldset class="form-item">
-                <label class="form-label" for="subject">Temat:</label>
-                <div class="divide-label"></div>
-                <select class="focusable" id="subject">
-                    <option value="Zgłoś problem">Zgłoś problem</option>
-                    <option value="Współpraca">Współpraca</option>
-                </select>
-            </fieldset>
-            <fieldset class="form-item">
-                <label class="form-label" for="name">Imię i nazwisko:</label>
-                <div class="divide-label"></div>
-                <input class="focusable" id="name" type="text" name="name" size="30" required>
-            </fieldset>
+        <form name="contact-form" action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" onsubmit="return validateForm()" method="POST">
+            <p class="contact-form-label">Zainteresowała Cię nasza aplikacja?</p>
+            <p class="contact-form-label-small">Napisz do nas, a poinformujemy Cię, gdy wystartujemy z działającą wersją.</p>
             <fieldset class="form-item">
                 <label class="form-label" for="telephone">Telefon:</label>
                 <div class="divide-label"></div>
-                <input class="focusable" id="telephone" type="tel" placeholder="xxx-xxx-xxx" pattern="\d{3}[\-]\d{3}[\-]\d{3}" name="telephone" size="30">
+                <input class="focusable" name="telephone" id="telephone" type="tel" placeholder="xxx-xxx-xxx" pattern="\d{3}[\-]\d{3}[\-]\d{3}" name="telephone" size="32">
             </fieldset>
             <fieldset class="form-item">
                 <label class="form-label" for="email">Adres email:</label>
                 <div class="divide-label"></div>
-                <input class="focusable" id="email" type="email" name="email" size="30" required>
+                <input class="focusable" name="email" id="email" type="email" name="email" size="32">
             </fieldset>
             <fieldset class="form-item">
                 <label class="form-label message-text" for="text">Tekst wiadomości:</label>
                 <div class="divide-label"></div>
-                <textarea class="focusable" name="text" id="text" rows="10" required></textarea>
+                <textarea class="focusable" name="text" id="text" rows="5" placeholder="Masz jakieś sugestie? Chcesz przekazać nam swoją wiadomość? Napisz."></textarea>
             </fieldset>
             <input type="hidden" name="receiver" value="m.rybczonek@gmail.com">
             <input id="submit" class="button" type="submit" value="Wyślij">
@@ -195,5 +183,6 @@
 <script src="js/slidingObjects.js"></script>
 <script src="js/scrollingNavigation.js"></script>
 <script src="js/scrollButton.js"></script>
+<script src="js/validateForm.js"></script>
 </body>
 </html>
