@@ -62,6 +62,7 @@ a{
 .slogan .slogan-text{
     z-index: 1;
     padding-top: 300px;
+    height: 405px;
 }
 .slogan .slogan-text .secondary-slogan{ /*button*/
     min-width: 200px;
