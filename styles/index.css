@@ -51,12 +51,17 @@ a{
     left:0;
     bottom:0;
     right:0;
-    height:405px;
+    height:705px;
     width:100%;
     z-index:0;
+    overflow:hidden;
 }
 .slogan img{
     height:705px;
+}
+.slogan .slogan-text{
+    z-index:1;
+    padding-top:300px;
 }
 .slogan .slogan-text .secondary-slogan{ /*button*/
     min-width:200px;
@@ -74,10 +79,6 @@ a{
     color:#00008B;
     border-color:#00008B;
     transform: scale(1.1);
-}
-.slogan .slogan-text{
-    z-index:1;
-    margin-top:300px;
 }
 @media screen and (max-width:715px){
     .slogan .slogan-text .main-slogan {
