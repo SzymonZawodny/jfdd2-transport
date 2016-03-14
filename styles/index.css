@@ -31,13 +31,19 @@ a {
 .button:hover {
   background-color: #3B23FF;
 }
-
+.page{
+    min-height: 600px;
+}
+.half-page{
+    min-height:420px;
+}
 /*FBT-1 slogan*/
 .slogan {
   height: 775px;
   width: 100%;
   text-align: center;
   overflow: hidden;
+    background-color: #00008B;
 }
 
 .slogan .slogan-text .main-slogan {
@@ -186,22 +192,22 @@ a {
 /*FBT-10 other-functions END*/
 /*FBT-2 main functions*/
 
-.main-functions .function {
-  position:absolute;
-  display: inline-block;
-  text-align: center;
-  width: 25%;
-  float: left;
-  color: #FFFFFF;
-  font-size: larger;
-  transition: transform 500ms linear;
-  padding-top: 50px;
-  background-color: #00008B;
-}
 .main-functions {
     position:relative;
     display:block;
-    margin-bottom:705px;
+    background-color: #00008B;
+}
+.main-functions .function {
+position:absolute;
+display: inline-block;
+text-align: center;
+width: 25%;
+float: left;
+color: #FFFFFF;
+font-size: larger;
+transition: transform 500ms linear;
+padding-top: 50px;
+background-color: #00008B;
 }
 .main-functions .function p {
   height: 50px;
@@ -261,7 +267,7 @@ a {
   color: #00008B;
   background-color: #FFF;
   text-align: right;
-  height: 420px;
+  height: 100%;
   margin-top: 2px;
 }
 
@@ -341,7 +347,6 @@ a {
   color: #FFF;
   width: 48%;
   padding-left: 2%;
-  height: 420px;
   float: left;
   border-top: solid 2px #fff;
 }
