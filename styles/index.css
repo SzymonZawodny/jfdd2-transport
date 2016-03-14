@@ -135,10 +135,10 @@ a {
   transition: border-color 300ms linear;
 }
 
-/*.header .nav-item:hover {*/
-  /*border-bottom-color: #FFF;*/
-  /*border-top-color: #FFF;*/
-/*}*/
+.header .nav-item:hover {
+  border-bottom-color: #FFF;
+  border-top-color: #FFF;
+}
 
 /*FBT-9 nav END*/
 /*FBT-10 other-functions*/
