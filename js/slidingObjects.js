@@ -18,3 +18,26 @@ function slideMainSlogan() {
     }
   }, speed);
 }
+
+//main-functions animation
+var notAnimated = true;
+var mainFunctionsElements=$('.function');
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 120) {
+    if (notAnimated) {
+      mainFunctionsElements.eq(0).animate({
+        left: "+=25%"
+      }, 1500);
+      mainFunctionsElements.eq(1).animate({
+        left: "+=50%"
+      }, 3000);
+      mainFunctionsElements.eq(2).animate({
+        left: "-=50.1%"
+      }, 3000);
+      mainFunctionsElements.eq(3).animate({
+        left: "-=25.1%"
+      }, 1500);
+      notAnimated = false;
+    }
+  }
+});

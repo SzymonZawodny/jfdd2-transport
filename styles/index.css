@@ -59,10 +59,10 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 705px;
   width: 100%;
   z-index: 0;
   overflow: hidden;
+  max-height:705px;
 }
 
 .slogan img {
@@ -108,7 +108,7 @@ a {
   min-height: 70px;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
 }
 
 .header .navigation {
@@ -185,7 +185,9 @@ a {
 
 /*FBT-10 other-functions END*/
 /*FBT-2 main functions*/
+
 .main-functions .function {
+  position:absolute;
   display: inline-block;
   text-align: center;
   width: 25%;
@@ -196,15 +198,34 @@ a {
   padding-top: 50px;
   background-color: #00008B;
 }
-
+.main-functions {
+    position:relative;
+    display:block;
+    margin-bottom:705px;
+}
 .main-functions .function p {
   height: 50px;
-
 }
 
+#planYourTrip {
+    left: -25%;
+    z-index: 2;
+}
+
+#timetable {
+    left: -25%;
+}
+
+#stops {
+    left: 100%;
+}
+
+#situationOnTheRoad {
+    left: 100%;
+}
 .main-functions-images {
   width: 100%;
-  padding: 0px;
+  padding: 0;
   -webkit-filter: opacity(50%);
   -webkit-transition: .2s ease-in-out;
 }
