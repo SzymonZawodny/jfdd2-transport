@@ -122,20 +122,23 @@ a {
   top: 10px;
   left: 10px;
 }
-
+.header .nav-item.nav-item-white {
+  border-bottom-color: #FFF;
+  border-top-color: #FFF;
+}
 .header .nav-item {
   float: right;
   margin-top: 5px;
   padding: 20px;
-  border-bottom: solid 3px #00008B;
-  border-top: solid 3px #00008B;
+  border-bottom: solid 3px transparent;
+  border-top: solid 3px transparent;
   transition: border-color 300ms linear;
 }
 
-.header .nav-item:hover {
-  border-bottom-color: #FFF;
-  border-top-color: #FFF;
-}
+/*.header .nav-item:hover {*/
+  /*border-bottom-color: #FFF;*/
+  /*border-top-color: #FFF;*/
+/*}*/
 
 /*FBT-9 nav END*/
 /*FBT-10 other-functions*/

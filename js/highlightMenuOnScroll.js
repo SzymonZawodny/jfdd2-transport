@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(window).on('load scroll', function() {
         var positionY = $(window).scrollTop();
-        if(positionY > 0) {
+        if(positionY >= 0) {
             $('.header .nav-item').eq(2)
                 .addClass('nav-item-white');
         }
@@ -19,9 +19,9 @@ $(document).ready(function(){
             $('.header .nav-item').eq(1)
                 .removeClass('nav-item-white');
         }
-        if(positionY > 2650) {
+        if(positionY > 2150) {
             $('.header .nav-item').eq(0)
-                .addClass('.nav-item-white');
+                .addClass('nav-item-white');
             $('.header .nav-item').eq(1)
                 .removeClass('nav-item-white');
         }
