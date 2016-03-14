@@ -404,6 +404,7 @@ a {
   float: left;
   margin-right: 25px;
   width: 400px;
+  height: 310px;
 }
 
 .fa-clock-o {
@@ -411,11 +412,11 @@ a {
 }
 
 .fa-calendar-o {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .fa-cloud {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .cf:before,
