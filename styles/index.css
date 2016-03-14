@@ -446,3 +446,8 @@ a {
 .fa-arrow-circle-up {
   padding-bottom: 30px;
 }
+.sm-description{
+  font-size:1px;
+  visibility:hidden;
+  display:inline;
+}
