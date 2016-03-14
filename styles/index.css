@@ -397,14 +397,14 @@ a {
 }
 
 .description-text {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .main-description-images {
   float: left;
   margin-right: 25px;
   width: 400px;
-  height: 310px;
+  height: 360px;
 }
 
 .fa-clock-o {
