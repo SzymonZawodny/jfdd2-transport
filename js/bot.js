@@ -1,4 +1,11 @@
-$("body").mousemove(function(e) {
-    isHuman= true
+$("body").mousemove(function (e) {
+  isHuman = true
 });
-var isHuman= false;
+var isHuman = false;
+
+
+$('form').submit(function () {
+  if (!isHuman) {
+    return false;
+  }
+});
