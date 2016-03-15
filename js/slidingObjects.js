@@ -1,6 +1,7 @@
 $(document).ready(function () {
   slideMainSlogan();
 });
+
 function slideMainSlogan() {
   var initialMargin = 400;
   var finalMargin = 300;
@@ -21,8 +22,12 @@ function slideMainSlogan() {
 
 //main-functions animation
 var notAnimated = true;
-var mainFunctionsElements=$('.function');
 $(window).scroll(function () {
+  slidingDoorMainFunctions();
+});
+
+function slidingDoorMainFunctions(){
+  var mainFunctionsElements = $('.function');
   if ($(window).scrollTop() > 120) {
     if (notAnimated) {
       mainFunctionsElements.eq(0).animate({
@@ -40,4 +45,4 @@ $(window).scroll(function () {
       notAnimated = false;
     }
   }
-});
+}
