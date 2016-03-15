@@ -35,11 +35,76 @@ a {
 
 .page {
   min-height: 600px;
-  position:relative;
+  position: relative;
 }
 
 .half-page {
   min-height: 420px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 2350px) {
+  .other-functions .three-in-row {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .main-functions .function p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .other-functions .other-func-item {
+    transform: scale(0.7);
+  }
+
+  .other-functions {
+    margin-left: -10%;
+  }
+
+  .other-functions .other-func-item:hover {
+    transform: scale(0.75);
+  }
+
+  .divide-label {
+    display: block;
+  }
+
+  textarea {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .slogan .slogan-text .main-slogan {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .nav-item {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .other-functions .other-func-item {
+    transform: scale(0.5);
+  }
+
+  .other-functions {
+    margin-left: -20%;
+  }
+
+  .other-functions .other-func-item:hover {
+    transform: scale(0.52);
+  }
+
+  .header .nav-item {
+    padding: 20px 10px;
+  }
 }
 
 /*SECTION SLOGAN*/
@@ -104,11 +169,6 @@ a {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 715px) {
-  .slogan .slogan-text .main-slogan {
-    font-size: 40px;
-  }
-}
 /*SECTION SLOGAN END*/
 
 /*SECTION NAVIGATION BAR*/
@@ -139,24 +199,23 @@ a {
   padding: 20px;
   border-bottom: solid 3px #234495;
   border-top: solid 3px #234495;
-  transition: border-color 300ms linear;
+  transition: all 300ms ease;
 }
 
 .header .nav-item:hover {
   border-bottom-color: #FFF;
   border-top-color: #FFF;
 }
+
 /*SECTION NAVIGATION BAR END*/
 
 /*SECTION MAIN FUNCTIONS*/
 .main-functions {
-  /*position: relative;*/
-  /*display: block;*/
+  position: relative;
   background-color: #234495;
 }
 
 .main-functions .function {
-  position: absolute;
   display: inline-block;
   text-align: center;
   width: 25%;
@@ -172,23 +231,6 @@ a {
   height: 50px;
 }
 
-#planYourTrip {
-  left: -25%;
-  z-index: 2;
-}
-
-#timetable {
-  left: -25%;
-}
-
-#stops {
-  left: 100%;
-}
-
-#situationOnTheRoad {
-  left: 100%;
-}
-
 .main-functions-images {
   width: 100%;
   padding: 0;
@@ -202,17 +244,6 @@ a {
 
 }
 
-@media screen and (max-width: 1650px) {
-  .main-functions .function p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 1650px) {
-  .main-functions .function p {
-    font-size: 14px;
-  }
-}
 /*SECTION MAIN FUNCTIONS END*/
 
 /*SECTION OTHER FUNCTIONS*/
@@ -226,31 +257,16 @@ a {
   text-align: center;
   font-size: 14px;
   color: #234495;
-  margin: 8% 1%;
-  transition: all 0.6s ease;
+  margin-top: 8%;
   position: absolute;
+  transition: all 300ms ease-in-out;
+  left: -25%;
 }
-#localization-service {
-  left:-15%;
-}
-#avoid-transfers {
-  left:-15%;
-}
-#traffic-info {
-  right:115%;
-}
-#buses {
-  left: -15%;
+
+.other-functions .other-func-item.second-row {
   top: 40%;
 }
-#trams {
-  left:-15%;
-  top: 40%;
-}
-#trains {
-  right:115%;
-  top: 40%;
-}
+
 .other-functions .other-func-item:hover {
   opacity: 0.8;
   transform: scale(1.04);
@@ -264,22 +280,6 @@ a {
   transition: all 0.3s ease;
 }
 
-@media screen and (min-width: 2350px) {
-  .other-functions .three-in-row {
-    display: none;
-  }
-}
-
-/*splits other-functions icons*/
-@media screen and (min-width: 900px) {
-  .other-functions .two-in-row {
-    display: none;
-  }
-
-  .other-functions .three-in-row {
-    display: block;
-  }
-}
 /*SECTION OTHER FUNCTIONS END*/
 
 /*SECTION CONTACT AND CONTACT FORM*/
@@ -300,16 +300,6 @@ a {
 
 .divide-label {
   display: none;
-}
-
-@media screen and (max-width: 900px) {
-  .divide-label {
-    display: block;
-  }
-
-  textarea {
-    height: 50px;
-  }
 }
 
 .contact-form select {
@@ -394,6 +384,7 @@ a {
   font-size: 16px;
   padding-top: 10px;
 }
+
 /*SECTION CONTACT AND CONTACT FORM END*/
 
 /*SECTION FOOTER*/
@@ -433,6 +424,7 @@ a {
   color: #3B23FF;
   transform: scale(1.02)
 }
+
 /*SECTION FOOTER END*/
 
 /*SECTION DESCRIPTION*/
@@ -486,6 +478,7 @@ a {
 .cf {
   *zoom: 1;
 }
+
 /*SECTION DESCRIPTION END*/
 
 /*SECTION SCROLL TOP*/
@@ -508,4 +501,5 @@ a {
   visibility: hidden;
   display: inline;
 }
+
 /*SECTION SCROLL TOP END*/
