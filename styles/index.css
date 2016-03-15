@@ -20,7 +20,7 @@ a {
 .button {
   font-size: 16px;
   color: #FFFFFF;
-  background-color: #00008B;
+  background-color: #234495;
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -35,6 +35,7 @@ a {
 
 .page {
   min-height: 600px;
+  position:relative;
 }
 
 .half-page {
@@ -47,7 +48,7 @@ a {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  background-color: #00008B;
+  background-color: #234495;
 }
 
 .slogan .slogan-text .main-slogan {
@@ -98,8 +99,8 @@ a {
 
 .slogan .secondary-slogan:hover {
   background-color: aliceblue;
-  color: #00008B;
-  border-color: #00008B;
+  color: #234495;
+  border-color: #234495;
   transform: scale(1.1);
 }
 
@@ -112,7 +113,7 @@ a {
 
 /*SECTION NAVIGATION BAR*/
 .header {
-  background-color: #00008B;
+  background-color: #234495;
   color: #ffffff;
   min-height: 70px;
   position: fixed;
@@ -136,8 +137,8 @@ a {
   float: right;
   margin-top: 5px;
   padding: 20px;
-  border-bottom: solid 3px #00008B;
-  border-top: solid 3px #00008B;
+  border-bottom: solid 3px #234495;
+  border-top: solid 3px #234495;
   transition: border-color 300ms linear;
 }
 
@@ -151,7 +152,7 @@ a {
 .main-functions {
   /*position: relative;*/
   /*display: block;*/
-  background-color: #00008B;
+  background-color: #234495;
 }
 
 .main-functions .function {
@@ -164,7 +165,7 @@ a {
   font-size: larger;
   transition: transform 500ms linear;
   padding-top: 50px;
-  background-color: #00008B;
+  background-color: #234495;
 }
 
 .main-functions .function p {
@@ -224,11 +225,32 @@ a {
 .other-functions .other-func-item {
   text-align: center;
   font-size: 14px;
-  color: #00008B;
-  margin: 8% 8% 0 8%;
+  color: #234495;
+  margin: 8% 1%;
   transition: all 0.6s ease;
+  position: absolute;
 }
-
+#localization-service {
+  left:-15%;
+}
+#avoid-transfers {
+  left:-15%;
+}
+#traffic-info {
+  right:115%;
+}
+#buses {
+  left: -15%;
+  top: 40%;
+}
+#trams {
+  left:-15%;
+  top: 40%;
+}
+#trains {
+  right:115%;
+  top: 40%;
+}
 .other-functions .other-func-item:hover {
   opacity: 0.8;
   transform: scale(1.04);
@@ -262,14 +284,14 @@ a {
 
 /*SECTION CONTACT AND CONTACT FORM*/
 .contact-form {
-  background-color: #00008B;
+  background-color: #234495;
 }
 
 .contact-form form {
   float: right;
   width: 48%;
   padding-right: 2%;
-  color: #00008B;
+  color: #234495;
   background-color: #FFF;
   text-align: right;
   height: 100%;
@@ -304,7 +326,7 @@ a {
 
 .contact-form .focusable:focus,
 .contact-form .focusable:hover {
-  border: solid 2px #00008B;
+  border: solid 2px #234495;
 }
 
 .contact-form #subject {
@@ -347,7 +369,7 @@ a {
 }
 
 .contact-form .contact {
-  background-color: #00008B;
+  background-color: #234495;
   color: #FFF;
   width: 48%;
   padding-left: 2%;
@@ -376,7 +398,7 @@ a {
 
 /*SECTION FOOTER*/
 .footer {
-  background-color: #00008B;
+  background-color: #234495;
   color: #ffffff;
 }
 
@@ -415,7 +437,7 @@ a {
 
 /*SECTION DESCRIPTION*/
 .description {
-  background-color: #00008B;
+  background-color: #234495;
   color: #ffffff;
   min-height: 70px;
   position: relative;
