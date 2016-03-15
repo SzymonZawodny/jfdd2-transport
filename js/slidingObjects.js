@@ -20,28 +20,29 @@ function slideMainSlogan() {
   }, speed);
 }
 
-//main-functions animation
+//other-functions animation
 var notAnimated = true;
+var otherFunctionsElements = $('.other-func-item');
+
 $(window).scroll(function () {
-  slidingDoorMainFunctions();
+  slidingInOtherFunctions()
 });
 
-function slidingDoorMainFunctions(){
-  var mainFunctionsElements = $('.function');
-  if ($(window).scrollTop() > 120) {
+function slidingInOtherFunctions() {
+  if ($(window).scrollTop() > 550) {
     if (notAnimated) {
-      mainFunctionsElements.eq(0).animate({
-        left: "+=25%"
-      }, 1500);
-      mainFunctionsElements.eq(1).animate({
-        left: "+=50%"
-      }, 3000);
-      mainFunctionsElements.eq(2).animate({
-        left: "-=50.1%"
-      }, 3000);
-      mainFunctionsElements.eq(3).animate({
-        left: "-=25.1%"
-      }, 1500);
+      otherFunctionsElements.eq(0)
+        .animate({left: "20%"}, 1500);
+      otherFunctionsElements.eq(1).delay(500)
+        .animate({left: "45%"}, 1500);
+      otherFunctionsElements.eq(2).delay(1000)
+        .animate({left: "70%"}, 1500);
+      otherFunctionsElements.eq(3).delay(1500)
+        .animate({left: "20%"}, 1500);
+      otherFunctionsElements.eq(4).delay(2000)
+        .animate({left: "45%"}, 1500);
+      otherFunctionsElements.eq(5).delay(2500)
+        .animate({left: "70%"}, 1500);
       notAnimated = false;
     }
   }
