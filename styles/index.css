@@ -1,3 +1,4 @@
+/*GENERAL STYLES*/
 body {
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -31,24 +32,26 @@ a {
 .button:hover {
   background-color: #3B23FF;
 }
-.page{
-    min-height: 600px;
+
+.page {
+  min-height: 600px;
 }
-.half-page{
-    min-height:420px;
+
+.half-page {
+  min-height: 420px;
 }
-/*FBT-1 slogan*/
+
+/*SECTION SLOGAN*/
 .slogan {
   height: 775px;
   width: 100%;
   text-align: center;
   overflow: hidden;
-    background-color: #00008B;
+  background-color: #00008B;
 }
 
 .slogan .slogan-text .main-slogan {
   font-size: 60px;
-  /*font-border*/
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   letter-spacing: 0.03em;
   padding: 10px;
@@ -68,7 +71,7 @@ a {
   width: 100%;
   z-index: 0;
   overflow: hidden;
-  max-height:705px;
+  max-height: 705px;
 }
 
 .slogan img {
@@ -105,9 +108,9 @@ a {
     font-size: 40px;
   }
 }
+/*SECTION SLOGAN END*/
 
-/*FBT-1 slogan END*/
-/*FBT-9 nav*/
+/*SECTION NAVIGATION BAR*/
 .header {
   background-color: #00008B;
   color: #ffffff;
@@ -124,7 +127,7 @@ a {
 
 .header .logo {
   float: left;
-  position: absolute; /*to adjust position of the logo*/
+  position: absolute;
   top: 10px;
   left: 10px;
 }
@@ -142,9 +145,76 @@ a {
   border-bottom-color: #FFF;
   border-top-color: #FFF;
 }
+/*SECTION NAVIGATION BAR END*/
 
-/*FBT-9 nav END*/
-/*FBT-10 other-functions*/
+/*SECTION MAIN FUNCTIONS*/
+.main-functions {
+  /*position: relative;*/
+  /*display: block;*/
+  background-color: #00008B;
+}
+
+.main-functions .function {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  float: left;
+  color: #FFFFFF;
+  font-size: larger;
+  transition: transform 500ms linear;
+  padding-top: 50px;
+  background-color: #00008B;
+}
+
+.main-functions .function p {
+  height: 50px;
+}
+
+#planYourTrip {
+  left: -25%;
+  z-index: 2;
+}
+
+#timetable {
+  left: -25%;
+}
+
+#stops {
+  left: 100%;
+}
+
+#situationOnTheRoad {
+  left: 100%;
+}
+
+.main-functions-images {
+  width: 100%;
+  padding: 0;
+  -webkit-filter: opacity(50%);
+  -webkit-transition: .2s ease-in-out;
+}
+
+.main-functions-images:hover {
+  -webkit-filter: opacity(100%);
+  -webkit-transition: .2s ease-in-out;
+
+}
+
+@media screen and (max-width: 1650px) {
+  .main-functions .function p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .main-functions .function p {
+    font-size: 14px;
+  }
+}
+/*SECTION MAIN FUNCTIONS END*/
+
+/*SECTION OTHER FUNCTIONS*/
 .other-functions {
   margin-bottom: 200px;
   margin-top: 30px;
@@ -188,74 +258,9 @@ a {
     display: block;
   }
 }
+/*SECTION OTHER FUNCTIONS END*/
 
-/*FBT-10 other-functions END*/
-/*FBT-2 main functions*/
-
-.main-functions {
-    position:relative;
-    display:block;
-    background-color: #00008B;
-}
-.main-functions .function {
-position:absolute;
-display: inline-block;
-text-align: center;
-width: 25%;
-float: left;
-color: #FFFFFF;
-font-size: larger;
-transition: transform 500ms linear;
-padding-top: 50px;
-background-color: #00008B;
-}
-.main-functions .function p {
-  height: 50px;
-}
-
-#planYourTrip {
-    left: -25%;
-    z-index: 2;
-}
-
-#timetable {
-    left: -25%;
-}
-
-#stops {
-    left: 100%;
-}
-
-#situationOnTheRoad {
-    left: 100%;
-}
-.main-functions-images {
-  width: 100%;
-  padding: 0;
-  -webkit-filter: opacity(50%);
-  -webkit-transition: .2s ease-in-out;
-}
-
-.main-functions-images:hover {
-  -webkit-filter: opacity(100%);
-  -webkit-transition: .2s ease-in-out;
-
-}
-
-@media screen and (max-width: 1650px) {
-  .main-functions .function p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 1650px) {
-  .main-functions .function p {
-    font-size: 14px;
-  }
-}
-
-/*FBT-2 main functions END*/
-/*FBT-04 contact form + FBT-06 form validation*/
+/*SECTION CONTACT AND CONTACT FORM*/
 .contact-form {
   background-color: #00008B;
 }
@@ -288,7 +293,6 @@ background-color: #00008B;
 .contact-form select {
   border-width: 2px;
   transition: border-color 300ms linear, border-width 300ms linear;
-
 }
 
 .contact-form input {
@@ -368,9 +372,9 @@ background-color: #00008B;
   font-size: 16px;
   padding-top: 10px;
 }
+/*SECTION CONTACT AND CONTACT FORM END*/
 
-/*FBT-04 contact form + FBT-06 form validation END*/
-
+/*SECTION FOOTER*/
 .footer {
   background-color: #00008B;
   color: #ffffff;
@@ -407,7 +411,9 @@ background-color: #00008B;
   color: #3B23FF;
   transform: scale(1.02)
 }
+/*SECTION FOOTER END*/
 
+/*SECTION DESCRIPTION*/
 .description {
   background-color: #00008B;
   color: #ffffff;
@@ -458,7 +464,9 @@ background-color: #00008B;
 .cf {
   *zoom: 1;
 }
+/*SECTION DESCRIPTION END*/
 
+/*SECTION SCROLL TOP*/
 .scrollTop {
   position: fixed;
   right: 0;
@@ -472,8 +480,10 @@ background-color: #00008B;
 .fa-arrow-circle-up {
   padding-bottom: 30px;
 }
-.sm-description{
-  font-size:1px;
-  visibility:hidden;
-  display:inline;
+
+.sm-description {
+  font-size: 1px;
+  visibility: hidden;
+  display: inline;
 }
+/*SECTION SCROLL TOP END*/
