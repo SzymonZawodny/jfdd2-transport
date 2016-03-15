@@ -42,71 +42,6 @@ a {
   min-height: 420px;
 }
 
-/*MEDIA QUERIES*/
-@media screen and (min-width: 2350px) {
-  .other-functions .three-in-row {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1650px) {
-  .main-functions .function p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .other-functions .other-func-item {
-    transform: scale(0.7);
-  }
-
-  .other-functions {
-    margin-left: -10%;
-  }
-
-  .other-functions .other-func-item:hover {
-    transform: scale(0.75);
-  }
-
-  .divide-label {
-    display: block;
-  }
-
-  textarea {
-    height: 50px;
-  }
-}
-
-@media screen and (max-width: 715px) {
-  .slogan .slogan-text .main-slogan {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .header .nav-item {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .other-functions .other-func-item {
-    transform: scale(0.5);
-  }
-
-  .other-functions {
-    margin-left: -20%;
-  }
-
-  .other-functions .other-func-item:hover {
-    transform: scale(0.52);
-  }
-
-  .header .nav-item {
-    padding: 20px 10px;
-  }
-}
-
 /*SECTION SLOGAN*/
 .slogan {
   height: 775px;
@@ -503,3 +438,68 @@ a {
 }
 
 /*SECTION SCROLL TOP END*/
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 2350px) {
+  .other-functions .three-in-row {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .main-functions .function p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .other-functions .other-func-item {
+    transform: scale(0.7);
+  }
+
+  .other-functions {
+    margin-left: -10%;
+  }
+
+  .other-functions .other-func-item:hover {
+    transform: scale(0.75);
+  }
+
+  .divide-label {
+    display: block;
+  }
+
+  textarea {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .slogan .slogan-text .main-slogan {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .nav-item {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .other-functions .other-func-item {
+    transform: scale(0.5);
+  }
+
+  .other-functions {
+    margin-left: -20%;
+  }
+
+  .other-functions .other-func-item:hover {
+    transform: scale(0.52);
+  }
+
+  .header .nav-item {
+    padding: 20px 10px;
+  }
+}
