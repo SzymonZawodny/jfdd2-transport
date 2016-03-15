@@ -72,24 +72,22 @@ a {
   width: 100%;
   z-index: 0;
   overflow: hidden;
-  max-height: 705px;
 }
 
 .slogan img {
-  height: 705px;
+  width: 100%;
 }
 
 .slogan .slogan-text {
   z-index: 1;
-  padding-top: 300px;
-  height: 405px;
+  padding-top: 270px;
 }
 
 .slogan .slogan-text .secondary-slogan { /*button*/
   min-width: 200px;
   display: inline-block;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 70px;
   border-radius: 3px;
   border: solid 2px #FFF;
   box-shadow: 0 0 10px 7px rgba(30, 30, 30, 0.2);
@@ -472,11 +470,19 @@ a {
   textarea {
     height: 50px;
   }
+
+  .slogan img {
+    width: 900px;
+  }
+
+  .slogan .slogan-text .main-slogan {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 715px) {
   .slogan .slogan-text .main-slogan {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
