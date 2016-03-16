@@ -1,7 +1,11 @@
 var windowHeight=$(window).innerHeight();
 $(document).ready(function () {
+  if (windowHeight/2 > 450){
     $('.contact-form').css({top:-innerHeight*0.5});
-    slideMainSlogan();
+    slideMainSlogan();}
+  else{
+    $('.contact-form').css({top:'-460px'});
+    slideMainSlogan();}
 });
 
 function slideMainSlogan() {
@@ -53,7 +57,8 @@ function slidingInOtherFunctions() {
 
 $('.contact-button').click(function slidingContactForm(){
   if ($(window).scrollTop() > windowHeight*3) {
-    $('.contact-form').delay(200).animate({top:'0px'},2000);
+    $('.contact-form').addClass('visible-block').delay(200).animate({top:'0px'},2000);
+
   }
 });
 
