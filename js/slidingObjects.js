@@ -58,7 +58,7 @@ function slidingInOtherFunctions() {
 }
 
 $('.contact-button').click(function() {
-  $('.contact-form').removeClass('invisible')
+  $('.contact-form').toggleClass('invisible')
     .delay(200)
     .animate({top: '0px'}, 2000);
 
