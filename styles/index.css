@@ -56,10 +56,6 @@ a {
   position: relative;
 }
 
-.half-page {
-  min-height: 420px;
-}
-
 /*SECTION SLOGAN*/
 .slogan {
   height: 775px;
@@ -216,9 +212,13 @@ a {
 /*SECTION OTHER FUNCTIONS END*/
 
 /*SECTION CONTACT AND CONTACT FORM*/
+/*.description-and-contact{*/
+  /*background-color: #234495;*/
+  /*z-index:-2;*/
+/*}*/
 .contact-form {
   position:relative;
-  z-index:-2;
+  z-index:-1;
   background-color: #234495;
 }
 
@@ -326,7 +326,7 @@ a {
   border-left:none;
   border-right:none;
   position:relative;
-  top:30px;
+  top:-50px;
 }
 /*SECTION CONTACT AND CONTACT FORM END*/
 
