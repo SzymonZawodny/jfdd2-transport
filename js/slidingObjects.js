@@ -1,5 +1,7 @@
+var windowHeight=$(window).innerHeight();
 $(document).ready(function () {
-  slideMainSlogan();
+    $('.contact-form').css({top:-innerHeight*0.53});
+    slideMainSlogan();
 });
 
 function slideMainSlogan() {
@@ -25,7 +27,8 @@ var notAnimated = true;
 var otherFunctionsElements = $('.other-func-item');
 
 $(window).scroll(function () {
-  slidingInOtherFunctions()
+  slidingInOtherFunctions();
+  slidingContactForm();
 });
 
 function slidingInOtherFunctions() {
@@ -47,3 +50,10 @@ function slidingInOtherFunctions() {
     }
   }
 }
+
+function slidingContactForm(){
+  if ($(window).scrollTop() > windowHeight*3) {
+    $('.contact-form').delay(1000).animate({top:'0px'},2000);
+  }
+}
+
