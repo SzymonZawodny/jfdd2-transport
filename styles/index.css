@@ -12,8 +12,8 @@ a {
 .clear {
   clear: both;
 }
-.visible-block{
-  display:block;
+.invisible{
+  display: none;
 }
 .horizontal-list {
   display: inline-block;
@@ -221,7 +221,6 @@ a {
   position:relative;
   z-index:-1;
   background-color: #234495;
-  display:none;
 }
 
 
