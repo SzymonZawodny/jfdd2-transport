@@ -1,4 +1,4 @@
-var scrollTargets = ['#contact-form', '#main-functions', '#slogan'];
+var scrollTargets = ['#contact-button', '#main-functions', '#slogan'];
 var $scrollButtons = $('.nav-item');
 
 //scroll to contact-form
