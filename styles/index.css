@@ -422,6 +422,7 @@ a {
   border-color: #00008B;
   padding: 10px 10px 10px 10px;
   margin-bottom: 10px;
+  color: #234495;
 }
 
 .productDescription h1{
@@ -437,7 +438,7 @@ a {
   padding-left: 25px;
 }
 .productDescriptionText:hover{
-  background-color: #00008B;
+  background-color: #234495;
   color: white;
 }
 .descriptionIcon{
