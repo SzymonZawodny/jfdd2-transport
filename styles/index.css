@@ -123,14 +123,17 @@ a {
   top: 10px;
   left: 10px;
 }
-
+.header .nav-item.nav-item-white {
+  border-bottom-color: #FFF;
+  border-top-color: #FFF;
+}
 .header .nav-item {
   float: right;
   margin-top: 5px;
   padding: 20px;
-  border-bottom: solid 3px #234495;
-  border-top: solid 3px #234495;
-  transition: all 300ms ease;
+  border-bottom: solid 3px transparent;
+  border-top: solid 3px transparent;
+  transition: border-color 300ms linear;
 }
 
 .header .nav-item:hover {
