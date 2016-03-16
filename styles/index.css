@@ -216,11 +216,12 @@ a {
   /*background-color: #234495;*/
   /*z-index:-2;*/
 /*}*/
-.contact-form {
+.description-and-contact .contact-form {
   position:relative;
   z-index:-1;
   background-color: #234495;
 }
+
 
 .contact-form form {
   float: right;
