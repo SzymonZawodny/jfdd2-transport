@@ -8,14 +8,29 @@ var labels = {
   'main.function.busstop': 'Znasz przystanek, nie wiesz jaka linia?',
   'main.function.busstop.alt': 'Przystanki',
   'main.function.delays' : 'Sprawdź sytuację na drodze',
-  'main.function.delays.alt' : 'Opóźnienia',
-
+  'main.function.delays.alt': 'Opóźnienia',
+  'other.function.localization': 'Usługa lokalizacj',
+  'other.function.localization.alt': 'Usługa lokalizacj',
+  'other.function.avoid':'Unikaj przesiadek',
+  'other.function.avoid.alt':'Unikaj przesiadek',
+  'other.function.traffic':'Informacja drogowa',
+  'other.function.traffic.alt':'Informacja drogowa',
+  'other.function.bus':'Autobus',
+  'other.function.bus.alt':'Autobus',
+  'other.function.tram': 'Tramwaje',
+  'other.function.tram.alt': 'Tramwaje',
+  'other.function.train': 'Koleje',
+  'other.function.train.alt': 'Koleje',
 
 };
+$('label').text(function ()  {
+    return labels[this.id];
+});
 
-$('label').forEach(setLabel);
+$('img').each(setAlt);
 
-function setLabel(labelElement)  {
+function  setAlt(imgElement) {
 
-  labelElement.html(labels[labelElement.id]);
+  imgElement.setAttribute('alt', labels[imgElement.id]);
+
 }
