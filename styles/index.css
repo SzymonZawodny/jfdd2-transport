@@ -143,9 +143,14 @@ a {
 /*FBT-9 nav END*/
 /*FBT-10 other-functions*/
 .other-functions {
-  margin-bottom: 200px;
+  padding-bottom: 80px;
   margin-top: 30px;
   text-align: center;
+  background-image: url("../images/parallaxImage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 60px;
+  -webkit-transition: all 0.2s ease;
 }
 
 .other-functions .other-func-item {
@@ -448,3 +453,9 @@ a {
   margin-bottom: 25px;
 }
 
+.parallaxGroupImage{
+  background-image: url("../images/grupa.JPG");
+  background-size: 100% 600px;
+  width: 100%;
+  height: 600px;
+}
