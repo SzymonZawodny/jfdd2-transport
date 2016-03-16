@@ -10,13 +10,13 @@ function updateSectionsHeight() {
     $('.page').each(function(){
         $(this).css('height',windowHeight);
     });
-    if (windowHeight/2 > 370){
+    if (windowHeight/2 > 450){
         $('.half-page').each(function(){
           $(this).css('height',windowHeight/2);
         });}
     else {
         $('.half-page').each(function(){
-            $(this).css('height',370);
+            $(this).css('height',450);
         });
     }
 }

@@ -12,7 +12,9 @@ a {
 .clear {
   clear: both;
 }
-
+.visible-block{
+  display:block;
+}
 .horizontal-list {
   display: inline-block;
 }
@@ -212,14 +214,11 @@ a {
 /*SECTION OTHER FUNCTIONS END*/
 
 /*SECTION CONTACT AND CONTACT FORM*/
-/*.description-and-contact{*/
-  /*background-color: #234495;*/
-  /*z-index:-2;*/
-/*}*/
-.description-and-contact .contact-form {
+.contact-form {
   position:relative;
   z-index:-1;
   background-color: #234495;
+  display:none;
 }
 
 
@@ -327,7 +326,8 @@ a {
   border-left:none;
   border-right:none;
   position:relative;
-  top:-50px;
+  left:-10px;
+  margin-top: -10px;
 }
 /*SECTION CONTACT AND CONTACT FORM END*/
 
@@ -481,12 +481,14 @@ a {
   }
 }
 .productDescription{
+  background-color: #fff;
   margin: 0 auto;
   border-top: solid 4px;
   border-bottom: solid 4px;
   border-color: #00008B;
   padding: 10px 10px 10px 10px;
   margin-bottom: 10px;
+  z-index:0;
   color: #234495;
 }
 
