@@ -93,25 +93,30 @@ a {
   overflow: hidden;
 }
 
-.slogan img {
-  width: 100%;
-}
-
 .slogan .slogan-text {
   z-index: 1;
   padding-top: 270px;
 }
 
-#slide-1 {
+.slogan .slogan-background{
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+}
+
+.slogan #slide-1 {
   background-image: url("../images/slide2b.jpg");
-}
+  background-position: center right;
+  }
 
-#slide-2 {
+.slogan #slide-2 {
   background-image: url("../images/slide1b.jpg");
+  background-position: center center;
 }
 
-#slide-3 {
+.slogan #slide-3 {
   background-image: url("../images/slide3b.jpg");
+  background-position: center right;
 }
 
 /*SECTION SLOGAN END*/
