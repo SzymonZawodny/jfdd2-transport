@@ -11,7 +11,7 @@
 <body>
 
 <header id="header" class="header">
-  <!--FBT-9 top menu-->
+  <!--SECTION NAVIGATION BAR-->
   <ul class="logo">
     <li class="horizontal-list"><img src="images/koliber-logo.png" alt="logo kolibra"></li>
   </ul>
@@ -22,93 +22,74 @@
   </nav>
   <!--insert floating elements, check CSS-->
   <div class="clear"></div>
-  <!--FBT-9 top menu END-->
+  <!--SECTION NAVIGATION BAR END-->
 </header>
 <main>
-  <!--FBT-1 slogan-->
+  <!--SECTION SLOGAN-->
   <header class="slogan page" id="slogan">
     <div class="slogan-text">
       <h1 class="main-slogan">Z nami zawsze trafisz do celu!</h1>
       <a class="button-text button slogan-button" href="#">Dowiedz się więcej</a>
     </div>
-    <div class="slide">
-      <img src="images/slide2b.jpg" alt="autobus">
-    </div>
-    <div class="slide">
-      <img src="images/slide1b.jpg" alt="pkm">
-    </div>
-    <div class="slide">
-      <img src="images/slide3b.jpg" alt="tramwaj">
-    </div>
+    <div class="slide slogan-background" id="slide-1"></div>
+    <div class="slide slogan-background" id="slide-2"></div>
+    <div class="slide slogan-background" id="slide-3"></div>
   </header>
-  <!--FBT-1 slogan END-->
-  <!--FBT-2 main functions + FBT-3 images for functions-->
+  <!--SECTION SLOGAN END-->
+  <!--SECTION MAIN FUNCTIONS-->
   <section class="main-functions page" id="main-functions">
     <div class="function" id="planYourTrip">
       <img class="main-functions-images" src="images/trasa.png" alt="Zaplanuj podróż">
-
-      <div class="description">
-        <p>Wiesz gdzie chcesz dojechać, nie wiesz jak?</p>
-      </div>
+      <span>Wiesz gdzie chcesz dojechać, nie wiesz jak?</span>
     </div>
     <div class="function" id="timetable">
       <img class="main-functions-images" src="images/rozklad.jpg" alt="Rozkład jazdy">
-
-      <div class="description">
-        <p>Sprawdź linię i jej rozkład</p>
-      </div>
+      <span>Sprawdź linię i jej rozkład</span>
     </div>
     <div class="function" id="stops">
       <img class="main-functions-images" src="images/przystanek.jpg" alt="Przystanki">
-
-      <div class="description">
-        <p>Znasz przystanek, nie wiesz jaka linia?</p>
-      </div>
+      <span>Znasz przystanek, nie wiesz jaka linia?</span>
     </div>
     <div class="function">
       <img class="main-functions-images" src="images/opoznienie2.JPG" alt="Opóźnienia">
-
-      <div class="description">
-        <p>Sprawdź sytuację na drodze</p>
-      </div>
+      <span>Sprawdź sytuację na drodze</span>
     </div>
   </section>
-  <!--FBT-2 main functions + FBT-3 images for functions END-->
-  <!--FBT-10 other functions-->
+  <!--SECTION MAIN FUNCTIONS END-->
+  <!--SECTION OTHER FUNCTIONS-->
   <section class="other-functions page">
     <div class="other-func-list">
       <div class="horizontal-list other-func-item" id="localization-service">
-        <div class="front"><img src="images/localization.png" alt="Usługa lokalizacji"></div>
-        <div class="back">Usługa lokalizacji</div>
+        <span class="front"><img src="images/localization.png" alt="Usługa lokalizacji"></span>
+        <span class="back">Usługa lokalizacji</span>
       </div>
       <div class="horizontal-list other-func-item" id="avoid-transfers">
-        <div class="front"><img src="images/avoid.png" alt="Unikaj przesiadek"></div>
-        <div class="back">Unikaj przesiadek</div>
+        <span class="front"><img src="images/avoid.png" alt="Unikaj przesiadek"></span>
+        <span class="back">Unikaj przesiadek</span>
       </div>
       <div class="horizontal-list other-func-item" id="traffic-info">
-        <div class="front"><img src="images/traffic.png" alt="Informacja drogowa"></div>
-        <div class="back">Informacja drogowa</div>
+        <span class="front"><img src="images/traffic.png" alt="Informacja drogowa"></span>
+        <span class="back">Informacja drogowa</span>
       </div>
       <div class="horizontal-list other-func-item second-row" id="buses">
-        <div class="front"><img src="images/bus.png" alt="Autobusy"></div>
-        <div class="back">Autobusy</div>
+        <span class="front"><img src="images/bus.png" alt="Autobusy"></span>
+        <span class="back">Autobusy</span>
       </div>
       <div class="horizontal-list other-func-item second-row" id="trams">
-        <div class="front"><img src="images/tram.png" alt="Tramwaje"></div>
-        <div class="back">Tramwaje</div>
+        <span class="front"><img src="images/tram.png" alt="Tramwaje"></span>
+        <span class="back">Tramwaje</span>
       </div>
       <div class="horizontal-list other-func-item second-row" id="trains">
-        <div class="front"><img src="images/train.png" alt="Koleje"></div>
-        <div class="back">Pociągi</div>
+        <span class="front"><img src="images/train.png" alt="Koleje"></span>
+        <span class="back">Pociągi</span>
       </div>
     </div>
   </section>
-  <!--FBT-10 other functions END-->
+  <!--SECTION OTHER FUNCTIONS END-->
   <!--DESCRIPTION-->
-  <section class="description-and-contact">
-    <section class="productDescription half-page">
-      <div class="descriptionIcon">
-        <img src="images/clock.png">
+  <section class="productDescription half-page">
+    <div class="descriptionIcon">
+      <img src="images/clock.png">
         <span class="productDescriptionText">
           <h1>Z aplikacją KoLiber zawsze wiesz, kiedy przyjedzie twój transport!</h1>
 
@@ -117,9 +98,9 @@
           <br>
           <br>
         </span>
-      </div>
-      <div class="descriptionIcom">
-        <img src="images/calendar.png">
+    </div>
+    <div class="descriptionIcon">
+      <img src="images/calendar.png">
         <span class="productDescriptionText">
 
         <h1>Zaplanuj swoją podróż!</h1>
@@ -142,27 +123,21 @@
           <br>
           <br>
         </span>
-      </div>
-      <div class="button-text button contact-button" id="contact-button">Skontaktuj się z nami</div>
-    </section>
+    </div>
+    <div class="button-text button contact-button" id="contact-button">Skontaktuj się z nami</div>
   </section>
-  <!--FBT-12-description END-->
-  <!--FBT-04 contact form+FBT-06 form validation-->
+  <!--DESCRIPTION END-->
+  <!--CONTACT FORM-->
   <section class="contact-form half-page">
     <div class="contact">
       <h2>Dane kontaktowe:</h2>
 
       <h3><img src="images/koliber-logo.png" alt="KoliberLOGO">KoLiber</h3>
 
-      <p>ul. Kolibrowa 400c</p>
-
-      <p>80-999 Kolibrowo</p>
-
-      <p>Koliber Business Centre (10. piętro)</p>
-
-      <p>tel. +48 999 999 999</p>
-
-      <p>email: biuro@koliber.pl</p>
+      <p>ul. Kolibrowa 400c<br><br>80-999 Kolibrowo<br><br>
+        Koliber Business Centre (10. piętro)<br><br>
+        tel. +48 999 999 999<br><br>
+        email: biuro@koliber.pl</p>
     </div>
     <form name="contact-form" action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" onsubmit="return validateForm()"
           method="POST">
@@ -195,21 +170,105 @@
     </form>
   </section>
   <div class="clear"></div>
+  <!--CONTACT FORM END-->
+  <!--ABOUT US-->
+  <section class="aboutUs">
+    <h6>O Nas</h6>
+
+    <div class="szymon person">
+      <img src="images/aboutUs/szymon-small.jpg">
+
+      <div class="aboutUsText">
+        <ul> 
+          <li class="name">Szymon</li>
+          <br>
+          <li>Miłośnik podróżowania</li>
+           
+          <li>Żeglarz</li>
+           
+          <li>Backpacker</li>
+          <br>
+          <li>Otwarty na świat</li>
+           
+          <li>Fan piłki nożnej</li>
+           
+          <li>Lubi nowe technologie</li>
+           
+          <li>Wielbiciel indyjskiej kuchni</li>
+           
+          <br>
+        </ul>
+      </div>
+    </div>
+    <div class="dominik person">
+      <img src="images/aboutUs/dominik-small.jpg">
+
+      <div class="aboutUsText">
+        <ul> 
+          <li class="name">Dominik</li>
+          <br>
+          <li>Zawsze uśmiechnięty</li>
+           
+          <li>Lubi wyzwania</li>
+           
+          <li>Zafascynowany zwinnym <br>zarządzaniem projektami</li>
+          <br>
+          <li>Perfekcjonista</li>
+            
+          <li>Pasjonat piłki ręcznej <br>i karate</li>
+           
+          <li>Otwarty na świat i ludzi</li>
+           
+          <br>
+        </ul>
+      </div>
+
+    </div>
+    <div class="mateusz person">
+      <img src="images/aboutUs/mateusz-small.jpg">
+
+      <div class="aboutUsText">
+        <ul> 
+          <li class="name">Mateusz</li>
+          <br>
+          <li>Życiowy optymista</li>
+           
+          <li>Biegacz</li>
+           
+          <li>Zdrowy perfekcjonista</li>
+           
+          <li>Planista</li>
+           
+          <li>Miłośnik technologii</li>
+           
+          <li>Wielbiciel map</li>
+           
+          <li>Pilot</li>
+
+          <br>
+        </ul>
+      </div>
+
+    </div>
+
   </section>
-  <!--FBT-04 contact form+FBT-06 form validation END-->
+  <!--ABOUT US END-->
   <footer>
     <section class="footer">
       <a href="https://www.facebook.com/infoshareacademy/?fref=ts" target="_blank">
         <i class="fa fa-facebook-square fa-2x"></i>
-        <p class="sm-description">facebook</p>
+
+        <span class="sm-description">facebook</span>
       </a>
       <a href="https://twitter.com/search?q=%23InfoShareAcademy" target="_blank">
         <i class="fa fa-twitter-square fa-2x"></i>
-        <p class="sm-description">twitter</p>
+
+        <span class="sm-description">twitter</span>
       </a>
       <a href="https://plus.google.com/+infoshare" target="_blank">
-         <i class="fa fa-google-plus-square fa-2x"></i>
-         <p class="sm-description">google-plus</p>
+        <i class="fa fa-google-plus-square fa-2x"></i>
+
+        <span class="sm-description">google-plus</span>
       </a>
       <i class="fa fa-copyright ">&nbsp;2016 by KoLiber team</i>
     </section>
