@@ -1,11 +1,12 @@
 var busesBuffer=[];
 var busClass;
 var $gameboard=$('.gameboard');
+var $busesSmallBuffer;
 
 $(document).ready(function (){
   createArrayWithRandomBuses(100);
   createMultipleBusesAndRemoveThemFromArray(5);
-  busApproach();
+  busAnimation();
 });
 
 function createArrayWithRandomBuses(howManyBusesInBuffer){
@@ -34,9 +35,10 @@ function createMultipleBusesAndRemoveThemFromArray(numberOfBuses){
       .css({top:100*(arrayItem+1), left:'50px'});
     $gameboard.append($bus);
   }
+  $busesSmallBuffer= $('.bus');
 }
 
-function busApproach(){
+function busAnimation(){
   var initialMargin=0;
   var distanceTarget=200;
   var distanceDone=0;
@@ -62,3 +64,39 @@ function busApproach(){
     },speed);
   },approachTime+stopTime);
 }
+
+
+//
+//function busAnimation(){
+//  var initialMargin=0;
+//  var distanceTarget=200;
+//  var distanceDone=0;
+//  var speed=10;
+//  var approachTime=(distanceTarget+initialMargin)*speed;
+//  var stopTime=(Math.random()*3)*1000+500;
+//  var busArrivalIntervals = {};
+//
+//
+//  for(var numberOfBusInTheSmallBuffer=0;
+//      numberOfBusInTheSmallBuffer<$busesSmallBuffer.length;
+//      numberOfBusInTheSmallBuffer+=1){
+//    busArrivalIntervals[numberOfBusInTheSmallBuffer] = setInterval(function(item){
+//
+//      $busesSmallBuffer[item].css('margin-left','+=1px');
+//      distanceDone+=1;
+//      if(distanceDone===initialMargin+distanceTarget){
+//        clearInterval(busArrivalIntervals[item]);
+//      }
+//    },speed,numberOfBusInTheSmallBuffer);
+//
+//    setTimeout(function(){
+//      var intervalBusDeparture = setInterval(function(){
+//        $busesSmallBuffer[numberOfBusInTheSmallBuffer].css('margin-left','+=1px');
+//        distanceDone+=1;
+//        if(distanceDone===700){
+//          clearInterval(intervalBusDeparture);
+//        }
+//      },speed);
+//    },approachTime+stopTime);
+//  }
+//};

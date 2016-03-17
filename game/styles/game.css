@@ -1,15 +1,23 @@
 .gameboard{
   width:600px;
   height:600px;
-  background-color: darkseagreen;
+  background-color: transparent;
   border: solid 2px #234495;
   margin:30px;
 }
+.bus{
+  height:50px;
+  width:100px;
+  position:absolute;
+  z-index:2;
+}
 
 .busToOBC{
-  background-image: url("/game/images/busOBC.png");
+  background-image: url("../images/busOBC.png");
+  background-size: auto;
 }
 
 .busToNowhere{
- background-image: url("/game/images/busNowhere.png");
+ background-image: url("../images/busNowhere.png");
+  background-size: auto;
 }
