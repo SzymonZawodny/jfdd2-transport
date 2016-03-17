@@ -64,7 +64,7 @@ $('.contact-button').click(function() {
 
   $('body').animate({
 
-    scrollTop: $('#contact-button').offset().top + 300
+    scrollTop: $('#contact-button').offset().top
   }, 2000);
 
 });
