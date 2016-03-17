@@ -167,14 +167,9 @@ a {
 /*SECTION NAVIGATION BAR END*/
 
 .other-functions {
-  padding-bottom: 80px;
   margin-top: 30px;
   text-align: center;
-  background-image: url("../images/parallaxImage.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 0 60px;
-  -webkit-transition: all 0.2s ease;
+
 }
 
 /*SECTION NAVIGATION BAR END*/
