@@ -548,17 +548,17 @@ a {
   width: 32%;
   display: inline-block;
   border: 4px solid;
-  border-color: #00008B;
-  -webkit-filter: opacity(50%);
-  -webkit-transition: .2s ease-in-out;
+  border-color: #234495;
+  -webkit-filter: opacity(70%);
+  -webkit-transition: .4s ease-in-out;
   margin-top: 12px;
 }
 
 .person:hover {
   -webkit-filter: opacity(100%);
-  -webkit-transition: .2s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
   color: white;
-  background-color: #00008B;
+  background-color: #234495;
 }
 
 .aboutUsText {
