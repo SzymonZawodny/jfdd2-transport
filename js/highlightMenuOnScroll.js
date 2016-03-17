@@ -10,7 +10,7 @@ $(document).ready(function(){
             menuItem.eq(2)
                 .removeClass('nav-item-white');
         }
-        if(positionY > 700) {
+        if(positionY > windowHeight*0.9) {
             menuItem.eq(1)
                 .addClass('nav-item-white');
             menuItem.eq(2)
@@ -20,7 +20,7 @@ $(document).ready(function(){
             menuItem.eq(1)
                 .removeClass('nav-item-white');
         }
-        if(positionY > 2150) {
+        if(positionY + $(window).height() >= ($(document).height())-100) {
             menuItem.eq(0)
                 .addClass('nav-item-white');
             menuItem.eq(1)
