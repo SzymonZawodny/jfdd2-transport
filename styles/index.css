@@ -502,7 +502,9 @@ a {
 }
 
 .productDescription {
-  background-color: #fff;
+  background-image: url("../images/parallaxImage.jpg");
+  background-position: center;
+  background-attachment: fixed;
   margin: 0 auto;
   border-top: solid 4px;
   border-bottom: solid 4px;
