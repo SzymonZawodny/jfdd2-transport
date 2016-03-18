@@ -21,7 +21,14 @@ var labels = {
   'other.function.tram.alt': 'Tramwaje',
   'other.function.train': 'Koleje',
   'other.function.train.alt': 'Koleje',
-
+  'product.description.text.clock.h1': 'Z aplikacją KoLiber zawsze wiesz, kiedy przyjedzie twój transport!',
+  'product.description.text.clock.h3': 'Wystarczy spojrzenie na aplikację i wiesz ile czasu Ci jeszcze zostało.',
+  'product.description.text.calendar.h1':'Zaplanuj swoją podróż!',
+  'product.description.text.calendar.h3':'Zaplanuj godzinę odjazdu i przystanku do punktu docelowego. Z nami unikniesz rozczarowań!',
+  'product.description.text.cloud.h1':'Aplikacja KoLiber poinformuje Cię o utrudnieniach w ruchu.',
+  'product.description.text.cloud.h3':'Dzięki danym w trybie real time zawsze masz dostęp do aktualnych informacji.',
+  'contact.button.text':'Skontaktuj się z nami',
+  
 };
 
 $('label').text(function ()  {
