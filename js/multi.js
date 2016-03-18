@@ -22,8 +22,8 @@ var labels = {
   'other.function.train': 'Koleje',
   'other.function.train.alt': 'Koleje',
 
-
 };
+
 $('label').text(function ()  {
     return labels[this.id];
 });
