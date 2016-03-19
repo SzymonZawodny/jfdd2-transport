@@ -1,24 +1,25 @@
 var busesBuffer=[];
 var busClass;
 var $gameboard=$('.gameboard');
+var $buses=$('.buses');
 var howManyBuses, intervalNumber=0;
 
 $(document).ready(function (){
   createArrayWithRandomBuses(100);
   createMultipleBuses(howManyBuses);
-  busAnimation(0,200);
-  busAnimation(1,450);
-  busAnimation(2,300);
-  busAnimation(3,480);
-  busAnimation(4,90);
-  busAnimation(5,290);
+  busAnimation(0,450);
+  busAnimation(1,700);
+  busAnimation(2,550);
+  busAnimation(3,730);
+  busAnimation(4,340);
+  busAnimation(5,540);
   setInterval(function(){
-    busAnimation(6+6*intervalNumber,200);
-    busAnimation(7+6*intervalNumber,450);
-    busAnimation(8+6*intervalNumber,300);
-    busAnimation(9+6*intervalNumber,480);
-    busAnimation(10+6*intervalNumber,90);
-    busAnimation(11+6*intervalNumber,290);
+    busAnimation(6+6*intervalNumber,450);
+    busAnimation(7+6*intervalNumber,700);
+    busAnimation(8+6*intervalNumber,550);
+    busAnimation(9+6*intervalNumber,730);
+    busAnimation(10+6*intervalNumber,340);
+    busAnimation(11+6*intervalNumber,540);
     intervalNumber+=1;
   },7000);
 });
@@ -42,19 +43,24 @@ function createMultipleBuses(numberOfBuses) {
   var arrayItem;
   for (arrayItem = 0; arrayItem < numberOfBuses; arrayItem += 1) {
     var divClass = busesBuffer[arrayItem];
-    var $bus = $('<div>')
+    var $bus = $('<span>')
         .addClass(divClass)
         .addClass('bus')
-        .css({top: 140 * (arrayItem + 1), left: '0px'});
-    $gameboard.append($bus);
+        .css({top:140*(arrayItem+1), left: '-250px'});
+    $buses.append($bus);
   }
+  //$('.buses:nth-child(2n)').css({top:'280px'});
+  //$('.buses:nth-child(3n)').css({top:'420px'});
+  //$('.buses:nth-child(4n)').css({top:'560px'});
+  //$('.buses:nth-child(5n)').css({top:'700px'});
+  //$('.buses:nth-child(6n)').css({top:'840px'});
 }
 
 function busAnimation(indexInTheBuffer,busStopDistance){
   var initialMargin=0;
   var distanceTarget=busStopDistance;
   var distanceDone=0;
-  var speed=8;
+  var speed=16;
   var approachTime=(distanceTarget+initialMargin)*speed;
   var stopTime=((Math.random()*2)*1000)+2000;
   var delayTime=(Math.random()*2)*1000;
@@ -62,8 +68,8 @@ function busAnimation(indexInTheBuffer,busStopDistance){
 
 
   var intervalBusApproach = setInterval(function(){
-    $('.bus').eq(indexInTheBuffer).css('margin-left','+=1px');
-    distanceDone+=1;
+    $('.bus').eq(indexInTheBuffer).css('margin-left','+=2px');
+    distanceDone+=2;
     if(distanceDone===initialMargin+distanceTarget){
       clearInterval(intervalBusApproach);
     }
@@ -71,9 +77,9 @@ function busAnimation(indexInTheBuffer,busStopDistance){
   },delayTime);
   setTimeout(function(){
     var intervalBusDeparture = setInterval(function(){
-      $('.bus').eq(indexInTheBuffer).css('margin-left','+=1px');
-      distanceDone+=1;
-      if(distanceDone===850){
+      $('.bus').eq(indexInTheBuffer).css('margin-left','+=2px');
+      distanceDone+=2;
+      if(distanceDone===1100){
         clearInterval(intervalBusDeparture);
       }
     },speed);
