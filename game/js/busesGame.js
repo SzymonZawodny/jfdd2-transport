@@ -1,12 +1,12 @@
 var busesBuffer=[];
 var busClass;
-var $gameboard=$('.gameboard');
 var $buses=$('.buses');
 var howManyBuses, intervalNumber=0;
+var score=0, time;
 
 $(document).ready(function (){
   createArrayWithRandomBuses(100);
-  createMultipleBuses(howManyBuses);
+  createSpansWithBuses(howManyBuses);
   busAnimation(0,450);
   busAnimation(1,700);
   busAnimation(2,550);
@@ -39,7 +39,7 @@ function createArrayWithRandomBuses(howManyBusesInBuffer){
   howManyBuses=howManyBusesInBuffer;
 }
 
-function createMultipleBuses(numberOfBuses) {
+function createSpansWithBuses(numberOfBuses) {
   var arrayItem;
   for (arrayItem = 0; arrayItem < numberOfBuses; arrayItem += 1) {
     var divClass = busesBuffer[arrayItem];
@@ -49,6 +49,7 @@ function createMultipleBuses(numberOfBuses) {
         .css({top:140*(arrayItem+1), left: '-250px'});
     $buses.append($bus);
   }
+  //TODO divide buses in lines
   //$('.buses:nth-child(2n)').css({top:'280px'});
   //$('.buses:nth-child(3n)').css({top:'420px'});
   //$('.buses:nth-child(4n)').css({top:'560px'});
@@ -61,12 +62,11 @@ function busAnimation(indexInTheBuffer,busStopDistance){
   var distanceTarget=busStopDistance;
   var distanceDone=0;
   var speed=16;
-  var approachTime=(distanceTarget+initialMargin)*speed;
-  var stopTime=((Math.random()*2)*1000)+2000;
+  var approachTime=(distanceTarget+initialMargin)*speed/2;
+  var stopTime=2000;
   var delayTime=(Math.random()*2)*1000;
-  setTimeout(function(){
 
-
+  setTimeout(function(){ //ARRIVAL
   var intervalBusApproach = setInterval(function(){
     $('.bus').eq(indexInTheBuffer).css('margin-left','+=2px');
     distanceDone+=2;
@@ -75,7 +75,20 @@ function busAnimation(indexInTheBuffer,busStopDistance){
     }
   },speed);
   },delayTime);
-  setTimeout(function(){
+
+  setTimeout(function(){ //TODO score count during stop
+    $('.bus').eq(indexInTheBuffer).click(function(){
+      if($('.bus').eq(indexInTheBuffer).hasClass('busToOBC')){
+        score+=1;
+      }
+      else if($('.bus').eq(indexInTheBuffer).hasClass('busToNowhere')) {
+        score -= 10;
+      }
+      $('.actualScore').html(score);
+    });
+  },delayTime+approachTime);
+
+  setTimeout(function(){ // DEPARTURE
     var intervalBusDeparture = setInterval(function(){
       $('.bus').eq(indexInTheBuffer).css('margin-left','+=2px');
       distanceDone+=2;
