@@ -1,7 +1,7 @@
 .gameboard{
-  width:760px;
+  width:750px;
   height:900px;
-  background-color: transparent;
+  background-image: url("../images/gameboardBackGroundWithRoads.jpg");
   border: solid 2px #234495;
   margin:30px;
 }
