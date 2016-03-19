@@ -6,19 +6,19 @@ var howManyBuses, intervalNumber=0;
 $(document).ready(function (){
   createArrayWithRandomBuses(100);
   createMultipleBuses(howManyBuses);
-  busAnimation(0);
-  busAnimation(1);
-  busAnimation(2);
-  busAnimation(3);
-  busAnimation(4);
-  busAnimation(5);
+  busAnimation(0,200);
+  busAnimation(1,450);
+  busAnimation(2,300);
+  busAnimation(3,480);
+  busAnimation(4,90);
+  busAnimation(5,290);
   setInterval(function(){
-    busAnimation(6+6*intervalNumber);
-    busAnimation(7+6*intervalNumber);
-    busAnimation(8+6*intervalNumber);
-    busAnimation(9+6*intervalNumber);
-    busAnimation(10+6*intervalNumber);
-    busAnimation(11+6*intervalNumber);
+    busAnimation(6+6*intervalNumber,200);
+    busAnimation(7+6*intervalNumber,450);
+    busAnimation(8+6*intervalNumber,300);
+    busAnimation(9+6*intervalNumber,480);
+    busAnimation(10+6*intervalNumber,90);
+    busAnimation(11+6*intervalNumber,290);
     intervalNumber+=1;
   },7000);
 });
@@ -50,13 +50,13 @@ function createMultipleBuses(numberOfBuses) {
   }
 }
 
-function busAnimation(indexInTheBuffer){
+function busAnimation(indexInTheBuffer,busStopDistance){
   var initialMargin=0;
-  var distanceTarget=250;
+  var distanceTarget=busStopDistance;
   var distanceDone=0;
   var speed=8;
   var approachTime=(distanceTarget+initialMargin)*speed;
-  var stopTime=(Math.random()*3)*1000;
+  var stopTime=((Math.random()*2)*1000)+2000;
   var delayTime=(Math.random()*2)*1000;
   setTimeout(function(){
 

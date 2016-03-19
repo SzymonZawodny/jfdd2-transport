@@ -11,25 +11,35 @@
   height: 80px;
   width:54px;
   z-index:3;
-  left:390px;
 }
 .busStop1{
   top:145px;
+  left:340px;
 }
 .busStop2{
   top:285px;
+  left:590px;
+
 }
 .busStop3{
   top:425px;
+  left:440px;
+
 }
 .busStop4{
   top:565px;
+  left:620px;
+
 }
 .busStop5{
   top:705px;
+  left:230px;
+
 }
 .busStop6{
   top:845px;
+  left:430px;
+
 }
 .tree{
   position:absolute;
@@ -40,7 +50,7 @@
 }
 .tree1{
   top:290px;
-  left:480px;
+  left:330px;
 }
 .tree2{
   top: 570px;
@@ -48,7 +58,7 @@
 }
 .tree3{
   top:720px;
-  left:600px;
+  left:400px;
 }
 .bus{
   height:60px;
