@@ -1,16 +1,17 @@
 .gameboard{
   width:750px;
   height:900px;
-  background-image: url("../images/gameboardBackGroundWithRoads.jpg");
+  background-image: url("../images/gameboardBackgroundWithRoadsAndHouse.jpg");
   border: solid 2px #234495;
   margin:30px;
 }
 .busStop{
   position:absolute;
   background-image: url("../images/busStop.png");
+  height: 80px;
+  width:54px;
   z-index:3;
   left:390px;
-
 }
 .busStop1{
   top:145px;
@@ -30,7 +31,25 @@
 .busStop6{
   top:845px;
 }
-
+.tree{
+  position:absolute;
+  background-image: url("../images/tree.png");
+  height: 120px;
+  width:177px;
+  z-index:3;
+}
+.tree1{
+  top:290px;
+  left:480px;
+}
+.tree2{
+  top: 570px;
+  left: 200px;
+}
+.tree3{
+  top:720px;
+  left:600px;
+}
 .bus{
   height:60px;
   width:230px;
