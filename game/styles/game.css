@@ -1,13 +1,13 @@
 .gameboard{
-  width:700px;
-  height:700px;
+  width:760px;
+  height:900px;
   background-color: transparent;
   border: solid 2px #234495;
   margin:30px;
 }
 .bus{
-  height:50px;
-  width:100px;
+  height:60px;
+  width:230px;
   position:absolute;
   z-index:2;
 }
