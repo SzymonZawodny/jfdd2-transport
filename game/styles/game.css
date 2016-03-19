@@ -5,18 +5,42 @@
   border: solid 2px #234495;
   margin:30px;
 }
+.busStop{
+  position:absolute;
+  background-image: url("../images/busStop.png");
+  z-index:3;
+  left:390px;
+
+}
+.busStop1{
+  top:145px;
+}
+.busStop2{
+  top:285px;
+}
+.busStop3{
+  top:425px;
+}
+.busStop4{
+  top:565px;
+}
+.busStop5{
+  top:705px;
+}
+.busStop6{
+  top:845px;
+}
+
 .bus{
   height:60px;
   width:230px;
   position:absolute;
   z-index:2;
 }
-
 .busToOBC{
   background-image: url("../images/busOBC.png");
   background-size: auto;
 }
-
 .busToNowhere{
  background-image: url("../images/busNowhere.png");
   background-size: auto;
