@@ -28,17 +28,59 @@ var labels = {
   'product.description.text.cloud.h1':'Aplikacja KoLiber poinformuje Cię o utrudnieniach w ruchu.',
   'product.description.text.cloud.h3':'Dzięki danym w trybie real time zawsze masz dostęp do aktualnych informacji.',
   'contact.button.text':'Skontaktuj się z nami',
-  
-};
+  'contact.form.h2':'Dane kontaktowe:',
+  'contact.form.logo':'KoLiber',
+  'contact.form.description':'ul. Kolibrowa 400c<br><br>80-999 Kolibrowo<br><br>Koliber Business Centre (10. piętro)<br><br>tel. +48 999 999 999<br><br>email: biuro@koliber.pl',
+  'contact.form.label':'Zainteresowała Cię nasza aplikacja?',
+  'contact.form.label.small':'Napisz do nas, a poinformujemy Cię, gdy wystartujemy z działającą wersją.',
+  'contact.telephone':'Telefon:',
+  'contact.email':'Adres email:',
+  'contact.text':'Tekst wiadomości:',
+  'contact.text.placeholder':'Masz jakieś sugestie? Chcesz przekazać nam swoją wiadomość? Napisz.',
+  //'contact.send':'Wyślij',
+  'szymon1':'Miłośnik podróżowania<br><br>',
+  'szymon2':'Żeglarz<br><br>',
+  'szymon3':'Backpacker<br><br>',
+  'szymon4':'Otwarty na świat<br><br>',
+  'szymon5':'Fan piłki nożnej<br><br>',
+  'szymon6':'Lubi nowe technologie<br><br>',
+  'szymon7':'Wielbiciel indyjskiej kuchni<br><br>',
+  'dominik1':'Uśmiechnięty<br><br>',
+  'dominik2':'Zwolennik Agile<br><br>',
+  'dominik3':'Lubi wyzwania<br><br>',
+  'dominik4':'Fan nowych technologii<br><br>',
+  'dominik5':'Pasjonat piłki ręcznej i karate<br><br>',
+  'dominik6':'Miłośnik wolności<br><br>',
+  'dominik7':'Otwarty na świat i ludzi<br><br>',
+  'mateusz1':'Życiowy optymista<br><br>',
+  'mateusz2':'Biegacz<br><br>',
+  'mateusz3':'Zdrowy perfekcjonista<br><br>',
+  'mateusz4':'Planista<br><br>',
+  'mateusz5':'Miłośnik technologii<br><br>',
+  'mateusz6':'Wielbiciel map<br><br>',
+  'mateusz7':'Pilot<br><br>',
+  'contact.text.placeholder':'Masz jakieś sugestie? Chcesz przekazać nam swoją wiadomość?Napisz.',
 
-$('label').text(function ()  {
-    return labels[this.id];
+
+  };
+
+$(document).ready(function() {
+
+  function setLanguage() {
+    $('label').html(function ()  {
+      return labels[this.id];
+    });
+
+    $('img').each(function(index, element) {
+      element.setAttribute('alt', labels[element.id]);
+    });
+  }
+
+  setLanguage();
+
 });
 
-$('img').each(setAlt);
 
-function  setAlt(imgElement) {
 
-  imgElement.setAttribute('alt', labels[imgElement.id]);
 
-}
+
