@@ -3,10 +3,12 @@ var busClass;
 var $buses=$('.buses');
 var howManyBuses, intervalNumber=0;
 var score=0, time;
+var list = [];
 
 $(document).ready(function (){
   createArrayWithRandomBuses(100);
   createSpansWithBuses(howManyBuses);
+  counter(59);
   busAnimation(0,450);
   busAnimation(1,700);
   busAnimation(2,550);
@@ -23,6 +25,18 @@ $(document).ready(function (){
     intervalNumber+=1;
   },7000);
 });
+
+  function counter(howManySeconds) {
+    for (var numberOfSeconds = howManySeconds; numberOfSeconds > -1; numberOfSeconds -=1) {
+      list.push(numberOfSeconds);
+    }
+    for (var x in list) {
+      setTimeout(function (a){
+        time=howManySeconds-a;
+        $('.remainingTime').html(time);
+      },1000*x,x);
+    }
+  }
 
 function createArrayWithRandomBuses(howManyBusesInBuffer){
   for (var busNo = 0; busNo<howManyBusesInBuffer; busNo+=1){
@@ -45,7 +59,7 @@ function createSpansWithBuses(numberOfBuses) {
     var divClass = busesBuffer[arrayItem];
     var $bus = $('<span>')
         .addClass(divClass)
-        .addClass('bus')
+        .addClass('bus busBeforeDeparture')
         .css({top:140*(arrayItem+1), left: '-250px'});
     $buses.append($bus);
   }
@@ -76,12 +90,14 @@ function busAnimation(indexInTheBuffer,busStopDistance){
   },speed);
   },delayTime);
 
-  setTimeout(function(){ //TODO score count during stop
+  setTimeout(function(){
     $('.bus').eq(indexInTheBuffer).click(function(){
-      if($('.bus').eq(indexInTheBuffer).hasClass('busToOBC')){
+      if($('.bus').eq(indexInTheBuffer).hasClass('busToOBC')
+        && $('.bus').eq(indexInTheBuffer).hasClass('busBeforeDeparture')){
         score+=1;
       }
-      else if($('.bus').eq(indexInTheBuffer).hasClass('busToNowhere')) {
+      else if($('.bus').eq(indexInTheBuffer).hasClass('busToNowhere')
+        && $('.bus').eq(indexInTheBuffer).hasClass('busBeforeDeparture')) {
         score -= 10;
       }
       $('.actualScore').html(score);
@@ -89,6 +105,7 @@ function busAnimation(indexInTheBuffer,busStopDistance){
   },delayTime+approachTime);
 
   setTimeout(function(){ // DEPARTURE
+    $('.bus').eq(indexInTheBuffer).removeClass('busBeforeDeparture');
     var intervalBusDeparture = setInterval(function(){
       $('.bus').eq(indexInTheBuffer).css('margin-left','+=2px');
       distanceDone+=2;
