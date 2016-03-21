@@ -58,6 +58,25 @@
   left:430px;
 
 }
+.track1{
+  top:140px;
+}
+.track2{
+  top:280px;
+}
+.track3{
+  top:420px;
+}
+.track4{
+  top:560px;
+}
+.track5{
+  top:700px;
+}
+.track6{
+  top:840px;
+}
+
 .tree{
   position:absolute;
   background-image: url("../images/tree.png");
