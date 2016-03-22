@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(window).on('load scroll', function() {
         var positionY = $(window).scrollTop();
         var menuItem = $('.header .nav-item')
-        if(positionY >= 0) {
+        if(positionY > 0) {
             menuItem.eq(2)
                 .addClass('nav-item-white');
         }
@@ -10,7 +10,7 @@ $(document).ready(function(){
             menuItem.eq(2)
                 .removeClass('nav-item-white');
         }
-        if(positionY > windowHeight*0.9) {
+        if(positionY > windowHeight*0.8) {
             menuItem.eq(1)
                 .addClass('nav-item-white');
             menuItem.eq(2)

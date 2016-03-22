@@ -119,6 +119,15 @@ a {
   background-position: center right;
 }
 
+.slogan .easter-egg {
+  z-index:5;
+  position:absolute;
+  top:88%;
+  left:92%;
+  height:50px;
+  width:50px;
+}
+
 /*SECTION SLOGAN END*/
 
 /*SECTION NAVIGATION BAR*/
