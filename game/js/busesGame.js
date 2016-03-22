@@ -11,7 +11,7 @@ $('.button').click(function () {
   $('.gameboard').css('-webkit-filter','none');
   createArrayWithRandomBuses(100);
   createSpansWithBuses(howManyBuses);
-  counter(3);
+  counter(30);
   busAnimation(0, 450);
   busAnimation(1, 700);
   busAnimation(2, 550);
