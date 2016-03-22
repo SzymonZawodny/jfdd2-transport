@@ -95,7 +95,7 @@ a {
 
 .slogan .slogan-text {
   z-index: 1;
-  padding-top: 270px;
+  padding-top: 300px;
 }
 
 .slogan .slogan-background {
@@ -175,14 +175,6 @@ a {
 
 /*SECTION NAVIGATION BAR END*/
 
-.other-functions {
-  margin-top: 30px;
-  text-align: center;
-
-}
-
-/*SECTION NAVIGATION BAR END*/
-
 /*SECTION MAIN FUNCTIONS*/
 .main-functions {
   position: relative;
@@ -221,7 +213,7 @@ a {
 
 /*SECTION OTHER FUNCTIONS*/
 .other-functions {
-  margin-bottom: 200px;
+  text-align: center;
   margin-top: 30px;
   text-align: center;
 }
@@ -511,11 +503,13 @@ a {
 }
 
 .productDescription {
-  background-color: #fff;
+  background-image: url("../images/parallaxImage.jpg");
+  background-position: center;
+  background-attachment: fixed;
   margin: 0 auto;
   border-top: solid 4px;
   border-bottom: solid 4px;
-  border-color: #00008B;
+  border-color: #234495;
   padding: 10px 10px 10px 10px;
   margin-bottom: 10px;
   z-index: 0;
