@@ -1,15 +1,21 @@
 main{
   height:920px;
 }
-
-.gameboard{
-  width:750px;
-  height:900px;
+.gameboard {
+  width: 750px;
+  height: 900px;
+  font-family: Arial sans-serif;
   background-image: url("../images/gameboardBackgroundWithRoadsAndHouse.jpg");
   border: solid 2px #234495;
-  margin:30px;
+  margin: 30px;
   overflow: hidden;
+}
+.gameboard-paused{
   -webkit-filter: grayscale(100%);
+}
+.gameboard-active{
+  -webkit-filter: grayscale(1%);
+
 }
 .game-over{
   background-color: #234495;
@@ -43,9 +49,10 @@ main{
   top:30px;
   width:150px;
   height:70px;
-  background-color: aliceblue;
+  background-color: darkgreen;
+  opacity:0.8;
+  color:#FFF;
   border-radius: 15px;
-  font-family: Arial sans-serif;
   font-weight: bold;
   font-size: 16px;
 }
@@ -53,6 +60,7 @@ main{
   width:50%;
   padding:9px;
   text-align: right;
+  font: bold 16px Arial;
 }
 .busStop{
   position:absolute;
@@ -133,6 +141,9 @@ main{
   width:230px;
   position:absolute;
   z-index:2;
+}
+.bus:hover{
+  cursor: url(../images/walking-man.png),help;
 }
 .busToOBC{
   background-image: url("../images/busOBC.png");

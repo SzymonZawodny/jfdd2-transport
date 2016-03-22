@@ -8,7 +8,7 @@ var ids = [];
 
 $('.button').click(function () {
   $('.button').css('visibility','hidden');
-  $('.gameboard').css('-webkit-filter','none');
+  $('.gameboard').removeClass('gameboard-paused').addClass('gameboard-active');
   createArrayWithRandomBuses(100);
   createSpansWithBuses(howManyBuses);
   counter(30);
@@ -44,7 +44,7 @@ function counter(howManySeconds) { //TIME MANAGEMENT + SCOREBOARD
         });
         ids = [];
         $('.your-score').html(score+' pkt.');
-        $('.gameboard').css('-webkit-filter','grayscale(100%)');
+        $('.gameboard').removeClass('gameboard-active').addClass('gameboard-paused');
         $('.game-over').css('visibility','visible');
       }
     }, 1000 * x, x));
