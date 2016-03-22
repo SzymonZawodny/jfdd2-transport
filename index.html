@@ -29,7 +29,8 @@
   <header class="slogan page" id="slogan">
     <div class="slogan-text">
       <h1 class="main-slogan"><label id="header.welcome.title"></label></h1>
-      <a class="button-text button slogan-button" href="#"><label id="header.welcome.button"></label></a>
+      <a class="button-text button slogan-button"><label id="header.welcome.button"></label></a>
+
     </div>
     <div class="slide slogan-background" id="slide-1"></div>
     <div class="slide slogan-background" id="slide-2"></div>
@@ -91,9 +92,9 @@
     <div class="descriptionIcon">
       <img src="images/clock.png">
         <span class="productDescriptionText">
-          <h1>Z aplikacją KoLiber zawsze wiesz, kiedy przyjedzie twój transport!</h1>
+          <h1><label id="product.description.text.clock.h1"></label></h1>
 
-          <h3>Wystarczy spojrzenie na aplikację i wiesz ile czasu Ci jeszcze zostało.</h3>
+          <h3><label id="product.description.text.clock.h3"></label></h3>
           <br>
           <br>
           <br>
@@ -103,10 +104,9 @@
       <img src="images/calendar.png">
         <span class="productDescriptionText">
 
-        <h1>Zaplanuj swoją podróż!</h1>
+        <h1><label class="page-regional-content" id="product.description.text.calendar.h1"></label></h1>
 
-        <h3>Zaplanuj godzinę odjazu i przyjazdu do punktu docelowego.<br>Nasza aplikacja
-          korzysta z cały czas aktualizujących się danych. Z nami unikniesz rozczarowań!</h3>
+        <h3><label id="product.description.text.calendar.h3"></label></h3>
         <br>
         <br>
         <br>
@@ -116,57 +116,53 @@
       <img src="images/cloud.png">
       <span class="productDescriptionText">
 
-        <h1>Aplikacja KoLiber poinformuje Cię o utrudnieniach w ruchu.</h1>
+        <h1><label id="product.description.text.cloud.h1"></label></h1>
 
-          <h3>Dzięki danym w trybie real time zawsze masz dostęp do aktualnych informacji.</h3>
+          <h3><label id="product.description.text.cloud.h3"></label></h3>
           <br>
           <br>
           <br>
         </span>
     </div>
-    <div class="button-text button contact-button" id="contact-button">Skontaktuj się z nami</div>
+    <div class="button-text button contact-button" id="contact-button"><label id="contact.button.text"></label></div>
   </section>
   <!--DESCRIPTION END-->
   <!--CONTACT FORM-->
   <section class="contact-form half-page">
     <div class="contact">
-      <h2>Dane kontaktowe:</h2>
+      <h2><label id="contact.form.h2"></label></h2>
 
-      <h3><img src="images/koliber-logo.png" alt="KoliberLOGO">KoLiber</h3>
+      <h3><img src="images/koliber-logo.png" alt="KoliberLOGO"><label id="contact.form.logo"></label></h3>
 
-      <p>ul. Kolibrowa 400c<br><br>80-999 Kolibrowo<br><br>
-        Koliber Business Centre (10. piętro)<br><br>
-        tel. +48 999 999 999<br><br>
-        email: biuro@koliber.pl</p>
+      <p><label class="page-regional-content" id="contact.form.description"></label></p>
     </div>
     <form name="contact-form" action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" onsubmit="return validateForm()"
           method="POST">
-      <p class="contact-form-label">Zainteresowała Cię nasza aplikacja?</p>
+      <p class="contact-form-label"><label id="contact.form.label"></label></p>
 
-      <p class="contact-form-label-small">Napisz do nas, a poinformujemy Cię, gdy wystartujemy z działającą
-        wersją.</p>
+      <p class="contact-form-label-small"><label id="contact.form.label.small"></label></p>
       <fieldset class="form-item">
-        <label class="form-label" for="telephone">Telefon:</label>
+        <label class="form-label" for="telephone" id="contact.telephone"></label>
 
         <div class="divide-label"></div>
         <input class="focusable" name="telephone" id="telephone" type="tel" placeholder="xxx-xxx-xxx"
                pattern="\d{3}[\-]\d{3}[\-]\d{3}" size="32">
       </fieldset>
       <fieldset class="form-item">
-        <label class="form-label" for="email">Adres email:</label>
+        <label class="form-label" for="email" id="contact.email"></label>
 
         <div class="divide-label"></div>
-        <input class="focusable" name="email" id="email" type="email" size="32">
+        <input class="focusable hasPlaceholder" name="email" id="form.email" type="email" size="32">
       </fieldset>
       <fieldset class="form-item">
-        <label class="form-label message-text" for="text">Tekst wiadomości:</label>
+        <label class="form-label message-text" for="text" id="contact.text"></label>
 
         <div class="divide-label"></div>
-        <textarea class="focusable" name="text" id="text" rows="5"
-                  placeholder="Masz jakieś sugestie? Chcesz przekazać nam swoją wiadomość? Napisz."></textarea>
+        <textarea class="focusable hasPlaceholder" name="text" id="form.text" rows="5"
+                  placeholder=""></textarea>
       </fieldset>
       <input type="hidden" name="receiver" value="m.rybczonek@gmail.com">
-      <input id="submit" class="button" type="submit" value="Wyślij">
+      <input id="submit" class="button" type="submit" value="Send">
     </form>
   </section>
   <div class="clear"></div>
@@ -182,21 +178,13 @@
         <ul> 
           <li class="name">Szymon</li>
           <br>
-          <li>Miłośnik podróżowania</li>
-           
-          <li>Żeglarz</li>
-           
-          <li>Backpacker</li>
-          <br>
-          <li>Otwarty na świat</li>
-           
-          <li>Fan piłki nożnej</li>
-           
-          <li>Lubi nowe technologie</li>
-           
-          <li>Wielbiciel indyjskiej kuchni</li>
-           
-          <br>
+          <li><label id="szymon1"></label></li>
+          <li><label id="szymon2"></label></li>
+          <li><label id="szymon3"></label></li>
+          <li><label id="szymon4"></label></li>
+          <li><label id="szymon5"></label></li>
+          <li><label id="szymon6"></label></li>
+          <li><label id="szymon7"></label></li>
         </ul>
       </div>
     </div>
@@ -207,19 +195,13 @@
         <ul> 
           <li class="name">Dominik</li>
           <br>
-          <li>Zawsze uśmiechnięty</li>
-           
-          <li>Lubi wyzwania</li>
-           
-          <li>Zafascynowany zwinnym <br>zarządzaniem projektami</li>
-          <br>
-          <li>Perfekcjonista</li>
-            
-          <li>Pasjonat piłki ręcznej <br>i karate</li>
-           
-          <li>Otwarty na świat i ludzi</li>
-           
-          <br>
+          <li><label id="dominik1"></label></li>
+          <li><label id="dominik2"></label></li>
+          <li><label id="dominik3"></label></li>
+          <li><label id="dominik4"></label></li>
+          <li><label id="dominik5"></label></li>
+          <li><label id="dominik6"></label></li>
+          <li><label id="dominik7"></label></li>
         </ul>
       </div>
 
@@ -231,21 +213,13 @@
         <ul> 
           <li class="name">Mateusz</li>
           <br>
-          <li>Życiowy optymista</li>
-           
-          <li>Biegacz</li>
-           
-          <li>Zdrowy perfekcjonista</li>
-           
-          <li>Planista</li>
-           
-          <li>Miłośnik technologii</li>
-           
-          <li>Wielbiciel map</li>
-           
-          <li>Pilot</li>
-
-          <br>
+          <li><label id="mateusz1"></label></li>
+          <li><label id="mateusz2"></label></li>
+          <li><label id="mateusz3"></label></li>
+          <li><label id="mateusz4"></label></li>
+          <li><label id="mateusz5"></label></li>
+          <li><label id="mateusz6"></label></li>
+          <li><label id="mateusz7"></label></li>
         </ul>
       </div>
 
