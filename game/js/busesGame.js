@@ -6,10 +6,12 @@ var score = 0, time;
 var list = [];
 var ids = [];
 
-$(document).ready(function () {
+$('.button').click(function () {
+  $('.button').css('visibility','hidden');
+  $('.gameboard').css('-webkit-filter','none');
   createArrayWithRandomBuses(100);
   createSpansWithBuses(howManyBuses);
-  counter(59);
+  counter(3);
   busAnimation(0, 450);
   busAnimation(1, 700);
   busAnimation(2, 550);
@@ -41,6 +43,9 @@ function counter(howManySeconds) {
           clearTimeout(index);
         });
         ids = [];
+        $('.your-score').html(score);
+        $('.gameboard').css('-webkit-filter','grayscale(100%)');
+        $('.game-over').css('visibility','visible');
       }
     }, 1000 * x, x));
   }
@@ -95,7 +100,7 @@ function busAnimation(indexInTheBuffer, busStopDistance) {
     ids.push(intervalBusApproach);
   }, delayTime));
 
-  ids.push(setTimeout(function () {
+  ids.push(setTimeout(function () { // COUNTING POINTS DURING STOP
     $('.bus').eq(indexInTheBuffer).click(function () {
       if ($('.bus').eq(indexInTheBuffer).hasClass('busToOBC')
         && $('.bus').eq(indexInTheBuffer).hasClass('busBeforeDeparture')) {
