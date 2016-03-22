@@ -29,7 +29,7 @@ $('.button').click(function () {
   }, 7000));
 });
 
-function counter(howManySeconds) {
+function counter(howManySeconds) { //TIME MANAGEMENT + SCOREBOARD
   for (var numberOfSeconds = howManySeconds; numberOfSeconds > -1; numberOfSeconds -= 1) {
     list.push(numberOfSeconds);
   }
@@ -43,7 +43,7 @@ function counter(howManySeconds) {
           clearTimeout(index);
         });
         ids = [];
-        $('.your-score').html(score);
+        $('.your-score').html(score+' pkt.');
         $('.gameboard').css('-webkit-filter','grayscale(100%)');
         $('.game-over').css('visibility','visible');
       }
