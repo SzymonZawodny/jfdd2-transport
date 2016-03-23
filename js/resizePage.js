@@ -21,10 +21,10 @@ function updateSectionsHeight() {
         });
     }
     if (windowWidth<1000){
-        $('#main-functions').css('height',windowHeight*2);
+        $('#main-functions').css('height',700*2);
     }
     if(windowWidth<800){
-        $('#main-functions').css('height',windowHeight*4);
+        $('#main-functions').css('height',600*4.1);
 
     }
 }
