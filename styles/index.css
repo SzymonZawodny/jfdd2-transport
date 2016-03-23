@@ -84,7 +84,7 @@ a {
 
 .slogan div {
   position: absolute;
-  top: 70px;
+  top: 50px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -134,12 +134,12 @@ a {
 .header {
   background-color: #234495;
   color: #ffffff;
-  min-height: 70px;
+  height: 70px;
   position: fixed;
   width: 100%;
   z-index: 100;
   box-shadow: 0px 2px 10px 1px rgba(255, 255, 255, 1);
-
+  transition: all 800ms ease;
 }
 
 .header .navigation {
@@ -152,6 +152,7 @@ a {
   position: absolute;
   top: 10px;
   left: 10px;
+  transition: all 800ms ease;
 }
 
 .header .nav-item.nav-item-white {
@@ -165,7 +166,7 @@ a {
   padding: 20px;
   border-bottom: solid 3px transparent;
   border-top: solid 3px transparent;
-  transition: border-color 300ms linear;
+  transition: all 610ms linear;
 }
 
 .header .nav-item:hover {
