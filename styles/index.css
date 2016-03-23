@@ -92,7 +92,7 @@ a {
   z-index: 0;
   overflow: hidden;
 }
-}
+
 
 .slogan .slogan-text {
   z-index: 1;
@@ -171,6 +171,18 @@ a {
   margin-top: 30px;
   text-align: center;
 
+}
+
+.england{
+  height: 30px;
+  width: 30px;
+  padding-left: 60px;
+}
+
+.poland{
+  height: 30px;
+  width: 30px;
+  padding-left: 20px;
 }
 
 /*SECTION NAVIGATION BAR END*/
