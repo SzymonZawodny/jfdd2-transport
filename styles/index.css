@@ -536,6 +536,22 @@ a {
 .aboutUsText {
   font-weight: normal;
 }
+.person{
+  border: solid 4px;
+  border-color: #234495;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #234495;
+  opacity: (50%);
+}
+.aboutUsHeader{
+ font-size: 20px;
+  margin-top: 10px;
+  color: #234495;
+}
+.zupa{
+  text-align: center;
+}
 
 
 /*!*ABOUT US END*!*/
