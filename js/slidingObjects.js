@@ -41,17 +41,27 @@ function slidingInOtherFunctions() {
   if ($(window).scrollTop() > windowHeight * 1.3) {
     if (notAnimated) {
       otherFunctionsElements.eq(0)
-        .animate({left: "20%"}, 1500);
+        .addClass('first-column');
       otherFunctionsElements.eq(1).delay(400)
-        .animate({left: "45%"}, 1500);
+        .queue(function(next){
+          $(this).addClass('second-column')
+          next();});
       otherFunctionsElements.eq(2).delay(800)
-        .animate({left: "70%"}, 1500);
+        .queue(function(next){
+          $(this).addClass('third-column')
+          next();});
       otherFunctionsElements.eq(3).delay(1200)
-        .animate({left: "20%"}, 1500);
+        .queue(function(next){
+          $(this).addClass('first-column')
+          next();});
       otherFunctionsElements.eq(4).delay(1600)
-        .animate({left: "45%"}, 1500);
+        .queue(function(next){
+          $(this).addClass('second-column')
+          next();});
       otherFunctionsElements.eq(5).delay(2000)
-        .animate({left: "70%"}, 1500);
+        .queue(function(next){
+          $(this).addClass('third-column')
+          next();});
       notAnimated = false;
     }
   }
