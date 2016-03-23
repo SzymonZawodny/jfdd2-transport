@@ -7,6 +7,7 @@ $(document).ready(function () {
 
 function updateSectionsHeight() {
     var windowHeight = window.innerHeight;
+    var windowWidth = window.innerWidth;
     $('.page').each(function(){
         $(this).css('height',windowHeight);
     });
@@ -18,5 +19,12 @@ function updateSectionsHeight() {
         $('.half-page').each(function(){
             $(this).css('height',450);
         });
+    }
+    if (windowWidth<1000){
+        $('#main-functions').css('height',windowHeight*2);
+    }
+    if(windowWidth<800){
+        $('#main-functions').css('height',windowHeight*4);
+
     }
 }
