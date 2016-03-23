@@ -2,6 +2,8 @@
 body {
   font-family: Arial, sans-serif;
   font-weight: bold;
+  min-width: 520px;
+  min-height: 600px;
 }
 
 a {
@@ -84,7 +86,7 @@ a {
 
 .slogan div {
   position: absolute;
-  top: 70px;
+  top: 50px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -134,12 +136,12 @@ a {
 .header {
   background-color: #234495;
   color: #ffffff;
-  min-height: 70px;
+  height: 70px;
   position: fixed;
   width: 100%;
   z-index: 100;
   box-shadow: 0px 2px 10px 1px rgba(255, 255, 255, 1);
-
+  transition: all 800ms ease;
 }
 
 .header .navigation {
@@ -152,6 +154,7 @@ a {
   position: absolute;
   top: 10px;
   left: 10px;
+  transition: all 800ms ease;
 }
 
 .header .nav-item.nav-item-white {
@@ -165,12 +168,16 @@ a {
   padding: 20px;
   border-bottom: solid 3px transparent;
   border-top: solid 3px transparent;
-  transition: border-color 300ms linear;
+  transition: all 610ms linear;
 }
 
 .header .nav-item:hover {
   border-bottom-color: #FFF;
   border-top-color: #FFF;
+}
+
+.header #contact-menu{
+  position: relative;
 }
 
 /*SECTION NAVIGATION BAR END*/
@@ -187,10 +194,10 @@ a {
   width: 25%;
   float: left;
   color: #FFFFFF;
-  font-size: larger;
-  transition: transform 500ms linear;
-  padding-top: 50px;
+  transition: all 500ms linear;
+  padding: 50px 0;
   background-color: #234495;
+  font-size: 14px;
 }
 
 .main-functions .function p {
@@ -230,6 +237,24 @@ a {
 
 .other-functions .other-func-item.second-row {
   top: 40%;
+}
+
+.other-functions .other-func-item.second-row-in-three {
+  top: 30%;
+}
+
+.other-functions .other-func-item.third-row-in-three {
+  top: 60%;
+}
+
+.other-functions .other-func-item.first-column {
+  left: 20%;
+}
+.other-functions .other-func-item.second-column {
+  left: 45%;
+}
+.other-functions .other-func-item.third-column {
+  left: 70%;
 }
 
 .other-functions .other-func-item:hover {
@@ -446,22 +471,53 @@ a {
 /*SECTION SCROLL TOP END*/
 
 /*MEDIA QUERIES*/
+@media screen and (max-width: 1000px) {
+  .main-functions .function {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 800px) {
-  .other-functions .other-func-item {
-    transform: scale(0.7);
+
+  .main-functions .function {
+    width: 50%;
+    padding-left:25%;
+    font-size: 16px;
   }
 
   .other-functions {
     margin-left: -10%;
   }
 
-  .other-functions .other-func-item:hover {
-    transform: scale(0.75);
+  #localization-service{
+    left:30%;
   }
 
-  .divide-label {
-    display: block;
+  #avoid-transfers{
+    left:60%;
   }
+
+  #traffic-info{
+    left:30%;
+    top:30%;
+  }
+
+  #buses{
+    left:60%;
+    top:30%;
+  }
+
+  #trams{
+    left:30%;
+    top:60%;
+  }
+
+  #trains{
+    left:60%;
+    top:60%;
+  }
+
 
   textarea {
     height: 50px;
@@ -477,24 +533,13 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .header .nav-item {
-    font-size: 12px;
-  }
 
   .slogan .slogan-text .main-slogan {
     font-size: 30px;
   }
 
-  .other-functions .other-func-item {
-    transform: scale(0.5);
-  }
-
   .other-functions {
     margin-left: -20%;
-  }
-
-  .other-functions .other-func-item:hover {
-    transform: scale(0.52);
   }
 
   .header .nav-item {
