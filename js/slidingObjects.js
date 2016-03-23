@@ -44,23 +44,23 @@ function slidingInOtherFunctions() {
         .addClass('first-column');
       otherFunctionsElements.eq(1).delay(400)
         .queue(function(next){
-          $(this).addClass('second-column')
+          $(this).addClass('second-column');
           next();});
       otherFunctionsElements.eq(2).delay(800)
         .queue(function(next){
-          $(this).addClass('third-column')
+          $(this).addClass('third-column');
           next();});
       otherFunctionsElements.eq(3).delay(1200)
         .queue(function(next){
-          $(this).addClass('first-column')
+          $(this).addClass('first-column');
           next();});
       otherFunctionsElements.eq(4).delay(1600)
         .queue(function(next){
-          $(this).addClass('second-column')
+          $(this).addClass('second-column');
           next();});
       otherFunctionsElements.eq(5).delay(2000)
         .queue(function(next){
-          $(this).addClass('third-column')
+          $(this).addClass('third-column');
           next();});
       notAnimated = false;
     }
