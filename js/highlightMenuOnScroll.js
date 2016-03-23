@@ -2,9 +2,18 @@ $(document).ready(function(){
     $(window).on('load scroll', function() {
         var positionY = $(window).scrollTop();
         var menuItem = $('.header .nav-item')
+        if(positionY===0){
+            $('.header').css({'height':'70px'});
+            $('.logo').css({'transform':'scale(1)', 'top':'10px'});
+            $('.nav-item').css({'transform':'scale(1)', 'margin-top':'5px', 'margin-left':'0px'});
+        }
         if(positionY > 0) {
             menuItem.eq(2)
                 .addClass('nav-item-white');
+            $('.header').css({'height':'50px'});
+            $('.logo').css({'transform':'scale(0.8)', 'top':'0px'});
+            $('.nav-item').css({'transform':'scale(0.75)', 'margin-top':'-6px', 'margin-left':'-48px'});
+
         }
         else{
             menuItem.eq(2)
