@@ -71,6 +71,9 @@ $('.contact-button').click(function() {
   $('.contact-form').toggleClass('invisible')
     .delay(200)
     .animate({top: '0px'}, 2000);
+    setTimeout(function(){
+      $('.contact-form').css({'z-index':'0'});
+    },2000);
 
   $('body').animate({
 
