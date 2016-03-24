@@ -11,6 +11,16 @@ a {
   color: #fff;
 }
 
+h1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+p{
+  margin-bottom: 10px;
+}
+
 .clear {
   clear: both;
 }
@@ -218,12 +228,19 @@ a {
 
 .main-functions .function-description-page {
   position:absolute;
-  left:10%;
-  width:80%;
-  height:100%;
+  width:70%;
+  height:60%;
+  left:9%;
   background-color: #234495;
-  z-index: 5;
+  z-index: 1;
   opacity: 0.9;
+  padding:100px;
+  color: #FFF;
+}
+
+.main-functions .function-description-page-text{
+  float:right;
+  width:60%;
 }
 
 /*SECTION MAIN FUNCTIONS END*/
