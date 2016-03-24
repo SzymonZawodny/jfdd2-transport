@@ -16,9 +16,13 @@
     <li class="horizontal-list"><img src="images/koliber-logo.png" alt="logo kolibra"></li>
   </ul>
   <nav class="navigation">
-    <a class="nav-item" id="contact-menu" href="#">Kontakt</a>
-    <a class="nav-item" href="#">Funkcjonalności</a>
-    <a class="nav-item" href="#">Strona główna</a>
+
+    <img class="translation england" src="images/multilanguage/england.png" alt="flagOfEngland">
+    <img class="translation poland" src="images/multilanguage/poland.png" alt="flagOfPoland">
+
+    <a class="nav-item" id="contact-menu" href="#"><label i18n="navigation.contact"></label></a>
+    <a class="nav-item" href="#"><label i18n="navigation.function"></label></a>
+    <a class="nav-item" href="#"><label i18n="navigation.main"></label></a>
   </nav>
   <!--insert floating elements, check CSS-->
   <div class="clear"></div>
@@ -28,8 +32,8 @@
   <!--SECTION SLOGAN-->
   <header class="slogan page" id="slogan">
     <div class="slogan-text">
-      <h1 class="main-slogan"><label id="header.welcome.title"></label></h1>
-      <a class="button-text button slogan-button"><label id="header.welcome.button"></label></a>
+      <h1 class="main-slogan"><label i18n="header.welcome.title"></label></h1>
+      <a class="button-text button slogan-button"><label i18n="header.welcome.button"></label></a>
 
     </div>
     <div class="slide slogan-background" id="slide-1"></div>
@@ -40,20 +44,20 @@
   <!--SECTION MAIN FUNCTIONS-->
   <section class="main-functions page" id="main-functions">
     <div class="function" id="planYourTrip">
-      <img class="main-functions-images" src="images/trasa.png" id="main.function.road.alt">
-      <span><label id="main.function.road"></label></span>
+      <img class="main-functions-images" src="images/trasa.png" i18n="main.function.road.alt">
+      <span><label i18n="main.function.road"></label></span>
     </div>
     <div class="function" id="timetable">
-        <img class="main-functions-images" src="images/rozklad.jpg" id="main.function.timetable.alt">
-      <span><label id="main.function.timetable"></label></span>
+        <img class="main-functions-images" src="images/rozklad.jpg" i18n="main.function.timetable.alt">
+      <span><label i18n="main.function.timetable"></label></span>
     </div>
     <div class="function" id="stops">
-      <img class="main-functions-images" src="images/przystanek.jpg" id="main.function.busStop.alt">
-      <span><label id="main.function.busStop"></label></span>
+      <img class="main-functions-images" src="images/przystanek.jpg" i18n="main.function.busStop.alt">
+      <span><label i18n="main.function.busStop"></label></span>
     </div>
     <div class="function">
-      <img class="main-functions-images" src="images/opoznienie2.JPG" id="main.function.delays.alt">
-      <span><label id="main.function.delays"></label></span>
+      <img class="main-functions-images" src="images/opoznienie2.JPG" i18n="main.function.delays.alt">
+      <span><label i18n="main.function.delays"></label></span>
     </div>
   </section>
   <!--SECTION MAIN FUNCTIONS END-->
@@ -61,28 +65,28 @@
   <section class="other-functions page">
     <div class="other-func-list">
       <div class="horizontal-list other-func-item" id="localization-service">
-        <span class="front"><img src="images/localization.png" id="other.function.localization.alt"></span>
-        <span class="back"><label id="other.function.localization"></label></span>
+        <span class="front"><img src="images/localization.png" i18n="other.function.localization.alt"></span>
+        <span class="back"><label i18n="other.function.localization"></label></span>
       </div>
       <div class="horizontal-list other-func-item" id="avoid-transfers">
-        <span class="front"><img src="images/avoid.png" id="other.function.traffic.alt"></span>
-        <span class="back"><label id="other.function.traffic"></label></span>
+        <span class="front"><img src="images/avoid.png" i18n="other.function.traffic.alt"></span>
+        <span class="back"><label i18n="other.function.traffic"></label></span>
       </div>
       <div class="horizontal-list other-func-item" id="traffic-info">
-        <span class="front"><img src="images/traffic.png" id="other.function.avoid.alt"></span>
-        <span class="back"><label id="other.function.avoid"></label></span>
+        <span class="front"><img src="images/traffic.png" i18n="other.function.avoid.alt"></span>
+        <span class="back"><label i18n="other.function.avoid"></label></span>
       </div>
       <div class="horizontal-list other-func-item second-row" id="buses">
-        <span class="front"><img src="images/bus.png" id="other.function.bus.alt"></span>
-        <span class="back"><label id="other.function.bus"></label></span>
+        <span class="front"><img src="images/bus.png" i18n="other.function.bus.alt"></span>
+        <span class="back"><label i18n="other.function.bus"></label></span>
       </div>
       <div class="horizontal-list other-func-item second-row" id="trams">
-        <span class="front"><img src="images/tram.png" id="other.function.tram.alt"></span>
-        <span class="back"><label id="other.function.tram"></label></span>
+        <span class="front"><img src="images/tram.png" i18n="other.function.tram.alt"></span>
+        <span class="back"><label i18n="other.function.tram"></label></span>
       </div>
       <div class="horizontal-list other-func-item second-row" id="trains">
-        <span class="front"><img src="images/train.png" id="other.function.train.alt"></span>
-        <span class="back"><label id="other.function.train"></label></span>
+        <span class="front"><img src="images/train.png" i18n="other.function.train.alt"></span>
+        <span class="back"><label i18n="other.function.train"></label></span>
       </div>
     </div>
   </section>
@@ -92,9 +96,9 @@
     <div class="descriptionIcon">
       <img src="images/clock.png">
         <span class="productDescriptionText">
-          <h1><label id="product.description.text.clock.h1"></label></h1>
+          <h1><label i18n="product.description.text.clock.h1"></label></h1>
 
-          <h3><label id="product.description.text.clock.h3"></label></h3>
+          <h3><label i18n="product.description.text.clock.h3"></label></h3>
           <br>
           <br>
           <br>
@@ -104,9 +108,9 @@
       <img src="images/calendar.png">
         <span class="productDescriptionText">
 
-        <h1><label class="page-regional-content" id="product.description.text.calendar.h1"></label></h1>
+        <h1><label class="page-regional-content" i18n="product.description.text.calendar.h1"></label></h1>
 
-        <h3><label id="product.description.text.calendar.h3"></label></h3>
+        <h3><label i18n="product.description.text.calendar.h3"></label></h3>
         <br>
         <br>
         <br>
@@ -116,15 +120,15 @@
       <img src="images/cloud.png">
       <span class="productDescriptionText">
 
-        <h1><label id="product.description.text.cloud.h1"></label></h1>
+        <h1><label i18n="product.description.text.cloud.h1"></label></h1>
 
-          <h3><label id="product.description.text.cloud.h3"></label></h3>
+          <h3><label i18n="product.description.text.cloud.h3"></label></h3>
           <br>
           <br>
           <br>
         </span>
     </div>
-    <div class="button-text button contact-button" id="contact-button"><label id="contact.button.text"></label></div>
+    <div class="button-text button contact-button" id="contact-button"><label i18n="contact.button.text"></label></div>
   </section>
   <!--DESCRIPTION END-->
   <!--CONTACT FORM-->
@@ -132,30 +136,30 @@
     <div class="contact">
       <h2><label id="contact.form.h2"></label></h2>
 
-      <h3><img src="images/koliber-logo.png" alt="KoliberLOGO"><label id="contact.form.logo"></label></h3>
+      <h3><img src="images/koliber-logo.png" alt="KoliberLOGO"><label i18n="contact.form.logo"></label></h3>
 
-      <p><label class="page-regional-content" id="contact.form.description"></label></p>
+      <p><label class="page-regional-content" i18n="contact.form.description"></label></p>
     </div>
     <form name="contact-form" action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" onsubmit="return validateForm()"
           method="POST">
-      <p class="contact-form-label"><label id="contact.form.label"></label></p>
+      <p class="contact-form-label"><label i18n="contact.form.label"></label></p>
 
-      <p class="contact-form-label-small"><label id="contact.form.label.small"></label></p>
+      <p class="contact-form-label-small"><label i18n="contact.form.label.small"></label></p>
       <fieldset class="form-item">
-        <label class="form-label" for="telephone" id="contact.telephone"></label>
+        <label class="form-label" for="telephone" i18n="contact.telephone"></label>
 
         <div class="divide-label"></div>
         <input class="focusable" name="telephone" id="telephone" type="tel" placeholder="xxx-xxx-xxx"
                pattern="\d{3}[\-]\d{3}[\-]\d{3}" size="32">
       </fieldset>
       <fieldset class="form-item">
-        <label class="form-label" for="email" id="contact.email"></label>
+        <label class="form-label" for="email" i18n="contact.email"></label>
 
         <div class="divide-label"></div>
         <input class="focusable hasPlaceholder" name="email" id="form.email" type="email" size="32">
       </fieldset>
       <fieldset class="form-item">
-        <label class="form-label message-text" for="text" id="contact.text"></label>
+        <label class="form-label message-text" for="text" i18n="contact.text"></label>
 
         <div class="divide-label"></div>
         <textarea class="focusable hasPlaceholder" name="text" id="form.text" rows="5"
@@ -178,13 +182,13 @@
         <ul> 
           <li class="name">Szymon</li>
           <br>
-          <li><label id="szymon1"></label></li>
-          <li><label id="szymon2"></label></li>
-          <li><label id="szymon3"></label></li>
-          <li><label id="szymon4"></label></li>
-          <li><label id="szymon5"></label></li>
-          <li><label id="szymon6"></label></li>
-          <li><label id="szymon7"></label></li>
+          <li><label i18n="szymon1"></label></li>
+          <li><label i18n="szymon2"></label></li>
+          <li><label i18n="szymon3"></label></li>
+          <li><label i18n="szymon4"></label></li>
+          <li><label i18n="szymon5"></label></li>
+          <li><label i18n="szymon6"></label></li>
+          <li><label i18n="szymon7"></label></li>
         </ul>
       </div>
     </div>
@@ -195,13 +199,13 @@
         <ul> 
           <li class="name">Dominik</li>
           <br>
-          <li><label id="dominik1"></label></li>
-          <li><label id="dominik2"></label></li>
-          <li><label id="dominik3"></label></li>
-          <li><label id="dominik4"></label></li>
-          <li><label id="dominik5"></label></li>
-          <li><label id="dominik6"></label></li>
-          <li><label id="dominik7"></label></li>
+          <li><label i18n="dominik1"></label></li>
+          <li><label i18n="dominik2"></label></li>
+          <li><label i18n="dominik3"></label></li>
+          <li><label i18n="dominik4"></label></li>
+          <li><label i18n="dominik5"></label></li>
+          <li><label i18n="dominik6"></label></li>
+          <li><label i18n="dominik7"></label></li>
         </ul>
       </div>
 
@@ -213,13 +217,13 @@
         <ul> 
           <li class="name">Mateusz</li>
           <br>
-          <li><label id="mateusz1"></label></li>
-          <li><label id="mateusz2"></label></li>
-          <li><label id="mateusz3"></label></li>
-          <li><label id="mateusz4"></label></li>
-          <li><label id="mateusz5"></label></li>
-          <li><label id="mateusz6"></label></li>
-          <li><label id="mateusz7"></label></li>
+          <li><label i18n="mateusz1"></label></li>
+          <li><label i18n="mateusz2"></label></li>
+          <li><label i18n="mateusz3"></label></li>
+          <li><label i18n="mateusz4"></label></li>
+          <li><label i18n="mateusz5"></label></li>
+          <li><label i18n="mateusz6"></label></li>
+          <li><label i18n="mateusz7"></label></li>
         </ul>
       </div>
 
@@ -262,5 +266,8 @@
 <script src="js/highlightMenuOnScroll.js"></script>
 <script src="js/resizePage.js"></script>
 <script src="js/multi.js"></script>
+<script src="js/pl.js"></script>
+<script src="js/en.js"></script>
+<script src="js/cookieLang.js"></script>
 </body>
 </html>

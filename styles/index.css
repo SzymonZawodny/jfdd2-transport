@@ -176,13 +176,14 @@ a {
 .england{
   height: 30px;
   width: 30px;
-  padding-left: 60px;
+  padding-left: 75px;
+  padding-top: 20px;
+
 }
 
 .poland{
   height: 30px;
   width: 30px;
-  padding-left: 20px;
 }
 
 /*SECTION NAVIGATION BAR END*/
