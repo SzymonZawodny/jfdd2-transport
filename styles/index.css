@@ -637,7 +637,12 @@ p{
     display: inline-block;
     padding-left: 25px;
   }
+@media screen and (max-width: 1000px) {
+  .videoVisibility{
+    visibility: hidden;
 
+  }
+}
   /*!*ABOUT US*!*/
   .aboutUs {
     background-color: white;
