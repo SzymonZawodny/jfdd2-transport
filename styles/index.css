@@ -672,6 +672,9 @@ p{
   .container{
     text-align: center;
   }
+  .about-us{
+    background-color: #FFF;
+  }
   .aboutUsHeader {
     font-size: 20px;
     margin-top: 10px;
