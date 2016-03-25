@@ -7,16 +7,24 @@ $(document).ready(function () {
 
 function updateSectionsHeight() {
     var windowHeight = window.innerHeight;
-    $('.page').each(function(){
-        $(this).css('height',windowHeight);
+    var windowWidth = window.innerWidth;
+    $('.page').each(function () {
+        $(this).css('height', windowHeight);
     });
-    if (windowHeight/2 > 450){
-        $('.half-page').each(function(){
-          $(this).css('height',windowHeight/2);
-        });}
-    else {
-        $('.half-page').each(function(){
-            $(this).css('height',450);
+    if (windowHeight / 2 > 450) {
+        $('.half-page').each(function () {
+            $(this).css('height', windowHeight / 2);
         });
+    }
+    else {
+        $('.half-page').each(function () {
+            $(this).css('height', 450);
+        });
+    }
+    if (windowWidth < 1000) {
+        $('#main-functions').css('height', 700 * 2);
+    }
+    if (windowWidth < 800) {
+        $('#main-functions').css('height', 600 * 4.1);
     }
 }
