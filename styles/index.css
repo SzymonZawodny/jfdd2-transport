@@ -544,7 +544,7 @@ p{
 @media screen and (max-width: 800px) {
 
   .main-functions .function {
-    width: 50%;
+    width: 75%;
     padding-left:25%;
     font-size: 16px;
   }
