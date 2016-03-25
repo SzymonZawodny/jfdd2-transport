@@ -15,7 +15,6 @@ $(document).ready(function(){
             $('.header').css({'height':'50px'});
             $('.logo').css({'transform':'scale(0.8)', 'top':'0px'});
             $('.nav-item').css({'transform':'scale(0.75)', 'margin-top':'-6px', 'margin-left':'-48px'});
-            $('#contact-menu').css({'left':'10px'});
         }
         else{
             menuItem.eq(2)

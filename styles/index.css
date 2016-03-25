@@ -29,6 +29,10 @@ p{
   display: none;
 }
 
+.visible {
+
+}
+
 .horizontal-list {
   display: inline-block;
 }
@@ -179,6 +183,9 @@ p{
   border-bottom: solid 3px transparent;
   border-top: solid 3px transparent;
   transition: all 610ms linear;
+  width: 190px;
+  text-align: center;
+
 }
 
 .header .nav-item:hover {
