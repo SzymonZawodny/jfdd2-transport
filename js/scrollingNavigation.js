@@ -11,20 +11,20 @@ $scrollButtons.eq(0).click(function () {
 });
 $scrollButtons.eq(1).click(function () {
   $('body').animate({
-    scrollTop: $(scrollTargets[1]).offset().top - 70
+    scrollTop: $(scrollTargets[1]).offset().top - 50
   }, 2000);
   return false;
 });
 $scrollButtons.eq(2).click(function () {
   $('body').animate({
-    scrollTop: $(scrollTargets[2]).offset().top - 70
+    scrollTop: $(scrollTargets[2]).offset().top - 50
   }, 2000);
   slideMainSlogan();
   return false;
 });
 $('.button-text.button.slogan-button').click(function () {
   $('body').animate({
-    scrollTop: $(scrollTargets[1]).offset().top - 70
+    scrollTop: $(scrollTargets[1]).offset().top - 50
   }, 2000);
   return false;
 });

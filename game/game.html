@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autobusy do OBC</title>
+    <link rel="icon" href="../images/koliber-logo.png"/>
+    <link href="../styles/reset.css" rel="stylesheet">
+    <link href="styles/game.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="gameboard gameboard-paused">
+        <div class="buses"></div>
+        <span class="busStop busStop1"></span>
+        <span class="busStop busStop2"></span>
+        <span class="busStop busStop3"></span>
+        <span class="busStop busStop4"></span>
+        <span class="busStop busStop5"></span>
+        <span class="busStop busStop6"></span>
+
+        <span class="tree tree1"></span>
+        <span class="tree tree2"></span>
+        <span class="tree tree3"></span>
+
+        <table class="scoreBoard">
+            <tr class="time">
+                <td class="scoreBoardElement">CZAS:</td>
+                <td class="scoreBoardElement remainingTime"></td>
+            </tr>
+            <tr class="score">
+                <td class="scoreBoardElement">PUNKTY:</td>
+                <td class="scoreBoardElement actualScore">0</td>
+            </tr>
+        </table>
+    </div>
+    <div class="game-over">
+        <p class="game-over-text">KONIEC GRY</p>
+        <p class="your-score-text">Twój wynik:</p>
+        <p class="your-score"></p>
+    </div>
+    <button class="button" href="#">ROZPOCZNIJ GRĘ</button>
+</main>
+<script src="../js/vendor/jquery-2.1.4.js"></script>
+<script src="js/busesGame.js"></script>
+</body>
+</html>
