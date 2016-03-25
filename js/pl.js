@@ -28,7 +28,7 @@ var translatePolish={
     'product.description.text.clock.h1': 'Z aplikacją KoLiber zawsze wiesz, kiedy przyjedzie twój transport!',
     'product.description.text.clock.h3': 'Wystarczy spojrzenie na aplikację i wiesz ile czasu Ci jeszcze zostało.',
     'product.description.text.calendar.h1':'Zaplanuj swoją podróż!',
-    'product.description.text.calendar.h3':'Zaplanuj godzinę odjazdu i przystanku do punktu docelowego. Z nami unikniesz rozczarowań!',
+    'product.description.text.calendar.h3':'Zaplanuj godzinę odjazdu i przystanku docelowego. Z nami unikniesz rozczarowań!',
     'product.description.text.cloud.h1':'Aplikacja KoLiber poinformuje Cię o utrudnieniach w ruchu.',
     'product.description.text.cloud.h3':'Dzięki danym w trybie real time zawsze masz dostęp do aktualnych informacji.',
     'contact.button.text':'Skontaktuj się z nami',
@@ -40,7 +40,7 @@ var translatePolish={
     'contact.telephone':'Telefon:',
     'contact.email':'Adres email:',
     'contact.text':'Tekst wiadomości:',
-    'contact.text.placeholder':'Masz jakieś sugestie? Chcesz przekazać nam swoją wiadomość? Napisz.',
+    'aboutUs':'O nas',
     //'contact.send':'Wyślij',
     'szymon1':'Miłośnik podróżowania<br><br>',
     'szymon2':'Żeglarz<br><br>',
@@ -65,7 +65,7 @@ var translatePolish={
     'mateusz7':'Pilot<br><br>',
   },
   placeholders:{
-    'form.email': 'email po polksu',
-    'form.text': 'text po polsku'
+    'form.email': 'nazwa@domena.pl',
+    'form.text': 'Masz jakieś sugestie? Chcesz przekazać nam swoją wiadomość? Napisz.'
   }
 };
