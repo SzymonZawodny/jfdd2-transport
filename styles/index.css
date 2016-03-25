@@ -193,14 +193,20 @@ p{
 .england{
   height: 30px;
   width: 30px;
-  padding-left: 75px;
-  padding-top: 20px;
+  /*padding-left: 75px;*/
+  /*padding-top: 20px;*/
+  position: absolute;
+  top: 10px;
+  left: 70px;
 
 }
 
 .poland{
   height: 30px;
   width: 30px;
+  position: absolute;
+  top: 10px;
+  left: 110px;
 }
 
 /*SECTION NAVIGATION BAR END*/
@@ -218,7 +224,7 @@ p{
   float: left;
   color: #FFFFFF;
   transition: all 500ms linear;
-  padding: 50px 0;
+  padding: 10% 0 0 0;
   background-color: #234495;
   font-size: 14px;
 }
@@ -242,8 +248,8 @@ p{
 .main-functions .function-description-page {
   position:absolute;
   width:70%;
-  height:60%;
-  top:20px;
+  height:80%;
+  top:10%;
   left:9%;
   background-color: #234495;
   z-index: 1;
@@ -654,7 +660,13 @@ p{
     margin-bottom: 10px;
     color: #234495;
   }
-
+  .aboutUsText li{
+    text-align: left;
+    padding:0;
+  }
+  .container{
+    text-align: center;
+  }
   .aboutUsHeader {
     font-size: 20px;
     margin-top: 10px;
