@@ -3,7 +3,7 @@ var translateEnglish={
     'navigation.contact':'Contact',
     'navigation.function':'Functions',
     'navigation.main':'Main Page',
-    'header.welcome.title': 'With Us you will always be on the destination',
+    'header.welcome.title': 'With us you will always reach your destination',
     'header.welcome.button':'Find out more',
     'main.function.road': 'You know where you are traveling, but do not know how?',
     'main.function.road.alt': 'Plan your trip',
