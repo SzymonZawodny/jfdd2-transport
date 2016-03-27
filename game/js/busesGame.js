@@ -6,8 +6,8 @@ var score = 0, time;
 var list = [];
 var ids = [];
 
-$('.button').click(function () {
-  $('.button').css('visibility','hidden');
+$('.start-game').click(function () {
+  $('.game-instruction').css('visibility','hidden');
   $('.gameboard').removeClass('gameboard-paused').addClass('gameboard-active');
   createArrayWithRandomBuses(100);
   createSpansWithBuses(howManyBuses);
@@ -126,3 +126,7 @@ function busAnimation(indexInTheBuffer, busStopDistance) {
     ids.push(intervalBusDeparture);
   }, delayTime + approachTime + stopTime));
 }
+
+$('.try-again').click(function() {
+  location.reload();
+});
