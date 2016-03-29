@@ -56,7 +56,7 @@ var translateEnglish={
     'dominik4':'Technology geek<br><br>',
     'dominik5':'Passionate about handball<br><br>',
     'dominik6':'Lover of freedom<br><br>',
-    'dominik7':'Receptive to world and people<br><br>',
+    'dominik7':'Receptive to world<br><br>',
     'mateusz1':'Optimistic in life<br><br>',
     'mateusz2':'Runner<br><br>',
     'mateusz3':'Healthy perfectionist<br><br>',
