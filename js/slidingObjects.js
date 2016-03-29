@@ -34,7 +34,6 @@ var otherFunctionsElements = $('.other-func-item');
 
 $(window).scroll(function () {
   slidingInOtherFunctions();
-  //slidingContactForm();
 });
 
 function slidingInOtherFunctions() {
@@ -66,19 +65,34 @@ function slidingInOtherFunctions() {
     }
   }
 }
-
+var contactFormPosition = 0;
 $('.contact-button').click(function() {
-  $('.contact-form').toggleClass('invisible')
-    .delay(200)
-    .animate({top: '0px'}, 2000);
-    setTimeout(function(){
-      $('.contact-form').css({'z-index':'0'});
-    },2000);
+    if(contactFormPosition===0){
+        $('.contact-form').toggleClass('invisible')
+            .delay(200)
+            .animate({top: '0px'}, 2000);
+        setTimeout(function(){
+            $('.contact-form').css({'z-index':'0'});
+        },2000);
+        contactFormPosition=1;
+        $('body').animate({
+            scrollTop: $('#contact-button').offset().top
+        }, 2000);
+    }
+    else{
+        $('.contact-form')
+            .delay(200)
+            .css({'z-index':-1})
+            .animate({top:-windowHeight/2},2000);
+        setTimeout(function(){
+            $('.contact-form').toggleClass('invisible');
+        },2500);
+        contactFormPosition=0;
+        $('body').animate({
+            scrollTop: $('#about-us').offset().top-windowHeight/2+72
+        }, 2500);
+    }
 
-  $('body').animate({
-
-    scrollTop: $('#contact-button').offset().top
-  }, 2000);
 
 });
 
