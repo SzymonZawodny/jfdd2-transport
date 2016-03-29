@@ -121,17 +121,17 @@ p{
 }
 
 .slogan #slide-1 {
-  background-image: url("../images/slide2b.jpg");
+  background-image: url("../images/slide/slide2b.jpg");
   background-position: center right;
 }
 
 .slogan #slide-2 {
-  background-image: url("../images/slide1b.jpg");
+  background-image: url("../images/slide/slide1b.jpg");
   background-position: center center;
 }
 
 .slogan #slide-3 {
-  background-image: url("../images/slide3b.jpg");
+  background-image: url("../images/slide/slide3b.jpg");
   background-position: center right;
 }
 
@@ -618,7 +618,7 @@ p{
 }
 
   .productDescription {
-    background-image: url("../images/parallaxImage.jpg");
+    background-image: url("../images/others/parallaxImage.jpg");
     background-position: center;
     background-attachment: fixed;
     margin: 0 auto;
