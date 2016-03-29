@@ -665,6 +665,15 @@ p{
     margin-top: 10px;
     margin-bottom: 10px;
     color: #234495;
+    -webkit-filter: opacity(50%);
+
+  }
+
+  .person:hover{
+    background-color: #234495;
+    color: white;
+    -webkit-filter: opacity(100%);
+
   }
   .aboutUsText li{
     text-align: left;
@@ -672,6 +681,7 @@ p{
   }
   .container{
     text-align: center;
+    background-color: white;
   }
   .about-us{
     background-color: #FFF;
