@@ -644,6 +644,10 @@ p{
     display: inline-block;
     padding-left: 25px;
   }
+
+  .row{
+    margin: 0;
+  }
   /*!*ABOUT US*!*/
   .aboutUs {
     background-color: white;
