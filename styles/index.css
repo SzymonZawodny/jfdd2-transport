@@ -657,6 +657,7 @@ p{
 
   .aboutUsText {
     font-weight: normal;
+    font-size: 13px;
   }
 
   .person {
@@ -666,6 +667,7 @@ p{
     margin-bottom: 10px;
     color: #234495;
     -webkit-filter: opacity(50%);
+    min-height: 258px;
 
   }
 
@@ -690,6 +692,10 @@ p{
     font-size: 20px;
     margin-top: 10px;
     color: #234495;
+  }
+
+  .mateusz-image{
+    max-width: 100%;
   }
 
 /*!*ABOUT US END*!*/
