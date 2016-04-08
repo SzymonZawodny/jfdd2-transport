@@ -4,7 +4,7 @@ var translatePolish={
     'navigation.function':'Funkcjonalności',
     'navigation.main':'Strona główna',
     'header.welcome.title': 'Z nami zawsze trafisz do celu',
-    'header.welcome.button':'Zaloguj się',
+    'header.welcome.button':'Przejdź do aplikacji',
     'main.function.road': 'Wiesz gdzie chcesz dojechać, nie wiesz jak?',
     'main.function.road.alt': 'Zaplanuj podróż',
     'main.function.timetable': 'Sprawdź linię i jej rozkład',

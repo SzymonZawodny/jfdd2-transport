@@ -4,7 +4,7 @@ var translateEnglish={
     'navigation.function':'Functions',
     'navigation.main':'Main Page',
     'header.welcome.title': 'With us you will always reach your destination',
-    'header.welcome.button':'Log in',
+    'header.welcome.button':'Go to application',
     'main.function.road': 'You know where you are traveling, but do not know how?',
     'main.function.road.alt': 'Plan your trip',
     'main.function.timetable': 'Check the lines and  timetables',
