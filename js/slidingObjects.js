@@ -73,6 +73,8 @@ $('.contact-button').click(function() {
             .animate({top: '0px'}, 2000);
         setTimeout(function(){
             $('.contact-form').css({'z-index':'0'});
+            $('.button-text.button.contact-button label').eq(0).addClass('invisible');
+            $('.button-text.button.contact-button label').eq(1).removeClass('invisible');
         },2000);
         contactFormPosition=1;
         $('body').animate({
@@ -85,7 +87,9 @@ $('.contact-button').click(function() {
             .css({'z-index':-1})
             .animate({top:-windowHeight/2},2000);
         setTimeout(function(){
-            $('.contact-form').toggleClass('invisible');
+          $('.contact-form').toggleClass('invisible');
+          $('.button-text.button.contact-button label').eq(0).removeClass('invisible');
+          $('.button-text.button.contact-button label').eq(1).addClass('invisible');
         },2500);
         contactFormPosition=0;
         $('body').animate({
