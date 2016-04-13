@@ -32,6 +32,7 @@ var translateEnglish={
     'product.description.text.cloud.h1':'KoLiber will inform you about traffic.',
     'product.description.text.cloud.h3':'Real time service gives you actual information about present situation on the road',
     'contact.button.text':'Contact with us',
+    'contact.button.text-hide':'Hide details',
     'contact.form.h2':'Contact details:',
     'contact.form.logo':'KoLiber',
     'contact.form.description':'Kolibrowa 400c<br><br>80-999 Kolibrowo<br><br>Koliber Business Centre (10th floor)<br><br>tel. +48 999 999 999<br><br>email: biuro@koliber.pl',
