@@ -5,4 +5,10 @@ function validateForm() {
     alert("Proszę podać telefon LUB adres e-mail");
     return false;
   }
+  var messageRegex = /^[^<>]*$/;
+  var messageRegexTest = messageRegex.test($("#message-text").val());
+  if (messageRegexTest === false) {
+    alert('W wiadomości znajdują się niedozwolone znaki "<", ">"');
+    return false;
+  }
 }
