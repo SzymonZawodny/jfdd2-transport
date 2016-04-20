@@ -22,9 +22,3 @@ $scrollButtons.eq(2).click(function () {
   slideMainSlogan();
   return false;
 });
-$('.button-text.button.slogan-button').click(function () {
-  $('body').animate({
-    scrollTop: $(scrollTargets[1]).offset().top - 50
-  }, 2000);
-  return false;
-});
