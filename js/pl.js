@@ -32,6 +32,7 @@ var translatePolish={
     'product.description.text.cloud.h1':'Aplikacja KoLiber poinformuje Cię o utrudnieniach w ruchu.',
     'product.description.text.cloud.h3':'Dzięki danym w trybie real time zawsze masz dostęp do aktualnych informacji.',
     'contact.button.text':'Skontaktuj się z nami',
+    'contact.button.text-hide':'Ukryj formularz',
     'contact.form.h2':'Dane kontaktowe:',
     'contact.form.logo':'KoLiber',
     'contact.form.description':'ul. Kolibrowa 400c<br><br>80-999 Kolibrowo<br><br>Koliber Business Centre (10. piętro)<br><br>tel. +48 999 999 999<br><br>email: biuro@koliber.pl',
